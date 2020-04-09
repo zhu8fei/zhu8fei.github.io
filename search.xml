@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>clean-git</title>
+      <link href="/2018/01/11/clean-git.html"/>
+      <url>/2018/01/11/clean-git.html</url>
+      
+        <content type="html"><![CDATA[<p>作者：Intopass<br>链接：<a href="https://www.zhihu.com/question/29769130/answer/45546231" target="_blank" rel="noopener">https://www.zhihu.com/question/29769130/answer/45546231</a><br>来源：知乎<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p><p>一：常规办法<br>1.删除无用的分支</p><pre class=" language-bash"><code class="language-bash"> <span class="token function">git</span> branch -d <span class="token operator">&lt;</span>branch_name<span class="token operator">></span></code></pre><a id="more"></a><p>2.删除无用的tag</p><pre class=" language-bash"><code class="language-bash"><span class="token function">git</span> tag -d <span class="token operator">&lt;</span>tag_name<span class="token operator">></span></code></pre><p>3.清理本地版本库</p><pre class=" language-bash"><code class="language-bash"><span class="token function">git</span> gc --prune<span class="token operator">=</span>now</code></pre><p>二：高级办法<br>注意高级办法会导致push冲突，需要强制提交，其他人pull也会遇到冲突，建议重新克隆。<br>！！！注意这些操作都很危险，建议找个示例库进行测试，确保自己完全掌握之后再实际操作。</p><p>1.完全重建版本库</p><pre class=" language-bash"><code class="language-bash"><span class="token function">rm</span> -rf .git<span class="token function">git</span> init<span class="token function">git</span> add <span class="token keyword">.</span><span class="token function">git</span> cm <span class="token string">"first commit"</span><span class="token function">git</span> remote add origin <span class="token operator">&lt;</span>your_github_repo_url<span class="token operator">></span><span class="token function">git</span> push -f -u origin master</code></pre><p>2.有选择性的合并历史提交</p><pre class=" language-bash"><code class="language-bash"><span class="token function">git</span> rebase -i <span class="token operator">&lt;</span>first_commit<span class="token operator">></span></code></pre><p>会进入一个如下所示的文件</p><pre class=" language-bash"><code class="language-bash">pick ba07c7d add bootstrap theme and <span class="token function">format</span> <span class="token function">import</span>pick 7d905b8 add newline at <span class="token function">file</span> last linepick 037313c fn up_first_char <span class="token function">rename</span> to capspick 34e647e add fn of <span class="token operator">&amp;&amp;</span> use <span class="token keyword">for</span> index.jsppick 0175f03 <span class="token function">rename</span> common includepick 7f3f665 update group name <span class="token operator">&amp;&amp;</span> update config</code></pre><p>将想合并的提交的pick改成s，如</p><pre class=" language-bash"><code class="language-bash">pick ba07c7d add bootstrap theme and <span class="token function">format</span> <span class="token function">import</span>pick 7d905b8 add newline at <span class="token function">file</span> last linepick 037313c fn up_first_char <span class="token function">rename</span> to capss 34e647e add fn of <span class="token operator">&amp;&amp;</span> use <span class="token keyword">for</span> index.jsppick 0175f03 <span class="token function">rename</span> common includepick 7f3f665 update group name <span class="token operator">&amp;&amp;</span> update config</code></pre><p>这样第四个提交就会合并进入第三个提交。<br>等合并完提交之后再运行</p><pre class=" language-bash"><code class="language-bash"> <span class="token function">git</span> push -f <span class="token function">git</span> gc --prune<span class="token operator">=</span>now</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> scm </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>绿色版mysql初始化</title>
+      <link href="/2016/08/02/mysql-init.html"/>
+      <url>/2016/08/02/mysql-init.html</url>
+      
+        <content type="html"><![CDATA[<p>本地安装个mysql容易吗.</p><h2 id="0x00-准备工作"><a href="#0x00-准备工作" class="headerlink" title="0x00 准备工作"></a>0x00 准备工作</h2><p>mysql.zip 下载地址: 我很懒.没找到.<br>解压并找到对应目录. 修改my.ini文件  默认会有一个my-default.ini文件.  没时间解释了,快copy.</p><h2 id="0x01-my-ini"><a href="#0x01-my-ini" class="headerlink" title="0x01 my.ini"></a>0x01 my.ini</h2><p>utf8 不解释.</p><pre class=" language-bash"><code class="language-bash">collation-server <span class="token operator">=</span> utf8_unicode_ciinit-connect<span class="token operator">=</span><span class="token string">'SET NAMES utf8'</span>character-set-server <span class="token operator">=</span> utf8<span class="token punctuation">[</span>client<span class="token punctuation">]</span>default-character-set<span class="token operator">=</span>utf8</code></pre><a id="more"></a><h2 id="0x02-环境变量"><a href="#0x02-环境变量" class="headerlink" title="0x02 环境变量"></a>0x02 环境变量</h2><p>添加bin目录到path</p><h2 id="0x03-mysql服务初始化"><a href="#0x03-mysql服务初始化" class="headerlink" title="0x03 mysql服务初始化"></a>0x03 mysql服务初始化</h2><pre class=" language-bash"><code class="language-bash">mysqld --initialize-insecure --user<span class="token operator">=</span>rootmysqld <span class="token function">install</span></code></pre><h2 id="0x04-修改root密码"><a href="#0x04-修改root密码" class="headerlink" title="0x04 修改root密码"></a>0x04 修改root密码</h2><p>非必须</p><pre class=" language-bash"><code class="language-bash">mysqladmin -u root password <span class="token punctuation">[</span>密码<span class="token punctuation">]</span></code></pre><h2 id="0x05-检查字符集"><a href="#0x05-检查字符集" class="headerlink" title="0x05 检查字符集"></a>0x05 检查字符集</h2><pre class=" language-bash"><code class="language-bash">SHOW VARIABLES LIKE <span class="token string">'character%'</span><span class="token punctuation">;</span></code></pre><p>正常姿势.  坑了也别怕. 因为刚刚安装好.  还可以把服务停了之后去修改my.ini . 重复0x01步骤.</p><pre><code>+--------------------------+--------+| Variable_name            | Value  |+--------------------------+--------+| character_set_client     | utf8   || character_set_connection | utf8   || character_set_database   | utf8   || character_set_filesystem | binary || character_set_results    | utf8   || character_set_server     | utf8   || character_set_system     | utf8   || character_sets_dir       |[我删了]|+--------------------------+--------+</code></pre><h2 id="0x06-赋权限"><a href="#0x06-赋权限" class="headerlink" title="0x06 赋权限"></a>0x06 赋权限</h2><pre class=" language-bash"><code class="language-bash">grant <span class="token punctuation">[</span>权限1,权限2, <span class="token punctuation">..</span>.   或者 all <span class="token punctuation">]</span> on <span class="token punctuation">[</span>实例<span class="token punctuation">]</span>.<span class="token punctuation">[</span>表<span class="token punctuation">]</span> to <span class="token string">'[用户]'</span>@<span class="token string">'[ip]'</span> <span class="token punctuation">[</span> identified by <span class="token string">'密码'</span> <span class="token punctuation">]</span><span class="token punctuation">;</span></code></pre><p>IP 可以使用% 做为全网段控制, 通用样例.</p><pre class=" language-bash"><code class="language-bash">    grant all on *.* to <span class="token string">'root'</span>@<span class="token string">'%'</span><span class="token punctuation">;</span></code></pre><h2 id="0x07-删除密码"><a href="#0x07-删除密码" class="headerlink" title="0x07 删除密码"></a>0x07 删除密码</h2><pre class=" language-bash"><code class="language-bash">mysql -u root -p mysql<span class="token operator">></span>use mysql<span class="token punctuation">;</span> mysql<span class="token operator">></span>update user <span class="token keyword">set</span> password<span class="token operator">=</span><span class="token string">''</span> where user<span class="token operator">=</span><span class="token string">'root'</span><span class="token punctuation">;</span></code></pre><p>需要重启mysql服务</p><h2 id="0x08-服务默认启动"><a href="#0x08-服务默认启动" class="headerlink" title="0x08 服务默认启动"></a>0x08 服务默认启动</h2><p>这个应该写在linux服务相关的文档中的. </p><pre class=" language-bash"><code class="language-bash"><span class="token function">chkconfig</span>  mysqld on</code></pre><h2 id="0x99-其它问题"><a href="#0x99-其它问题" class="headerlink" title="0x99 其它问题"></a>0x99 其它问题</h2><p>暂时没有. 哪天有了再补</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数据库 </category>
+          
+          <category> mysql </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> msyql </tag>
+            
+            <tag> linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>团队管理</title>
+      <link href="/2016/05/23/team-manage.html"/>
+      <url>/2016/05/23/team-manage.html</url>
+      
+        <content type="html"><![CDATA[<p>坦白说我对管理一无所知.</p><p>今天被一位前辈One on one , 谈了很多管理上的东西,当时觉得受益匪浅. 但回头想想,一件事也没记住. 这恐怕就是技术员工的通病,理性的东西,你放心交给我. 知性的东西,来多少坑多少.</p><p>大致思路:</p><p><code>// 这个more打的多好  就是让你点开了看.</code><br><a id="more"></a></p><h2 id="0x00-人为本"><a href="#0x00-人为本" class="headerlink" title="0x00. 人为本"></a>0x00. 人为本</h2><p>这是管理里面,最重要的一条.无论你以后做的好或不好,想想人员的问题,可能会让你更加出色.千万别忘记自己的出身,大家都是从开发干上来的,你喜欢的开发也喜欢.但这时候,你就要把你喜欢的扔给大家,自己去干些没人喜欢的事.当大家都成长起来的时候, 也就是团队成长的时候. </p><h2 id="0x01-真的是”兵熊熊一个-将熊熊一窝”吗"><a href="#0x01-真的是”兵熊熊一个-将熊熊一窝”吗" class="headerlink" title="0x01. 真的是”兵熊熊一个,将熊熊一窝”吗?"></a>0x01. 真的是”兵熊熊一个,将熊熊一窝”吗?</h2><p>有人比喻带团队就是带兵打仗,有句老话说的好:”兵熊熊一个,将熊熊一窝”.但是管理也是这样吗?很多人可能和我犯了同样的错误.论技术自认水平一般,但比起工作2-3年的小伙子们,还是要强大很多的. 这时候就很容易觉得,把工作交给他们还不如自己随手一做, 结果就是大错特错. 即浪费了时间,兄弟们也没有成长机会. 你强, 不是用来显示的, 而是支援兄弟们的强大后盾. </p><h2 id="0x02-时间管理"><a href="#0x02-时间管理" class="headerlink" title="0x02 时间管理"></a>0x02 时间管理</h2><p>说到这个, 我还是把 &lt;&lt;人月神话&gt;&gt;和&lt;&lt;the deadline&gt;&gt;两本神作扔出去挨拍吧. 这个我要是会,今天就不写这个帖子了.</p><h2 id="0x03-你想做的-不一定是老板想要的"><a href="#0x03-你想做的-不一定是老板想要的" class="headerlink" title="0x03 你想做的,不一定是老板想要的"></a>0x03 你想做的,不一定是老板想要的</h2><p>说到这里,可能很多人和我一样,早跳起来骂街了,我们只想要质量高些,性能好些,效率高些等等. 但boss们,并不care这些. 其实真的不care吗? 老板们不是傻子,他们要你来就是为他 高效的产出高性能没bug的代码的.但为什么就是不认可我们做的东西? 因为我们坑在表现形式和时间节点上.高大上的PPT,完整但并不完美的解决方案,性能不高但可以跑通的流程, 这才是最优解.别看我, 我也是造反派,写到这里的时候,我真的差点摔了自己的mac,然并*,毕竟我们是在打工,时间是老板的.按时完成任务,你才能赢得更多时间.</p><h2 id="0x04-管理没有理论-只能实践"><a href="#0x04-管理没有理论-只能实践" class="headerlink" title="0x04 管理没有理论,只能实践"></a>0x04 管理没有理论,只能实践</h2><p>哪本书里面写的我想不起来了.大致说法是: “软件工程学, 是近代产生的一门不是科学的科学.” 这句话如果是真理,那么应该补上半句”管理学是一门没有理论的学问” 对根本不科学(笑). 不同的环境,不同的人,不同的项目,不同的客户,会导致你工作的结果巨大偏差. 很多人天生就是很好的管理者,而另一些人(包括我),需要很长时间的锻炼依然找不到门路. 前辈说:”你管他对错,计划先出,然后执行.错了咱抓紧改了.你不去做,一点时间也争取不到.做了,错了,领导会觉得你们努力了. 没做时间没了,怎么都是你错.”</p><h2 id="0x05-抱怨残念"><a href="#0x05-抱怨残念" class="headerlink" title="0x05 抱怨残念"></a>0x05 抱怨残念</h2><p>说到这个问题,我是严重患者,每天对自己怨天尤人. 但请参考上一条, 你做为管理者,你都hold不住了,谁还能hold住. 时刻记住我们来就是解决问题的.如果没有问题了, 还要我们干什么. 调整心态, 如果觉得实在觉得累了,也千万不要硬撑, 请个长假, 让小伙伴们体验一下失去你时的压力.</p><h2 id="0x06-重中之重-owner-ship"><a href="#0x06-重中之重-owner-ship" class="headerlink" title="0x06 重中之重 owner ship"></a>0x06 重中之重 owner ship</h2><p>什么是owner ship. 把工作揽给自己就是owner ship吗? 错!错!错! 首先要培养团队的owner ship,想办法提醒大家,干好自己本份的事. 然后再说帮助 别人的事, 应该授人以渔的方式来达成owner ship.</p><h2 id="0x07-做”无用的”管理者"><a href="#0x07-做”无用的”管理者" class="headerlink" title="0x07 做”无用的”管理者"></a>0x07 做”无用的”管理者</h2><p>论工作年限,通常你应该是团队里面最资深的那位.那么你也就应该是团队中技术,业务等待能力最强的人.那为什么还要做”无用的”的管理者? &lt;&lt;the deadline&gt;&gt;里面有一个桥段.大致意思说主角在招team leader的时候,一个年轻的管理人员说,即使你不要我,也要试试要我的团队.没错, 好的团队即使没有管理者,一样可以把工作做的非常顺利,非常高效.那么我们为什么不去做这个”无用的”管理者? 节约更多的时间把精力放在设计和资源调配或者其它你认为有意义的地方去.</p><h2 id="Stack-Overflow"><a href="#Stack-Overflow" class="headerlink" title="Stack Overflow"></a>Stack Overflow</h2><p>干管理需要技术吗? 干了管理是不是要扔掉技术? 很多刚刚接触管理的人.都会提的问题. 就我这个正式干了没多久管理的半调子来说,这都是浮云. 没技术你想干好管理不实际, 干了管理没时间玩技术? 今天我那前辈教育我说: :”你要是把工作都理顺了,时间一大把的时候,你想干什么不行?” 我竟无言以对. 还是自己没干好.需要努力思考加实践了..</p><p>ps. 技能被”老婆”强制”打断”.  CDing… </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 职业生涯 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 管理 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>nodejs中exports和module.exports</title>
+      <link href="/2016/05/22/nodejs-export-module-export.html"/>
+      <url>/2016/05/22/nodejs-export-module-export.html</url>
+      
+        <content type="html"><![CDATA[<p>我是看<a title="七天学会NodeJS" href="http://nqdeng.github.io/7-days-nodejs/" target="_blank" rel="noopener">七天学会NodeJS</a> 入的坑. 结果被一同事给问住了. exports和module.exports有啥区别.作为一新手.根本没搞清楚. 一翻测试得到了如下的结论</p><pre class=" language-javascript"><code class="language-javascript">exports <span class="token operator">=</span> module<span class="token punctuation">.</span>exports</code></pre><p>不过别急.里面有好多有意思的东西</p><p>首先.nodejs启动后,会为每个加载的js文件会产生一个module对象(此处待验证因为没仔细找相关文档,只是目测结果)</p><p>app.js文件代码:</p><pre class=" language-javascript"><code class="language-javascript">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>module<span class="token punctuation">)</span></code></pre><a id="more"></a><p> 输出:</p><pre class=" language-javascript"><code class="language-javascript"><span class="token punctuation">{</span> id<span class="token punctuation">:</span> <span class="token string">'.'</span><span class="token punctuation">,</span>exports<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>parent<span class="token punctuation">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>filename<span class="token punctuation">:</span> <span class="token string">'E:\\node\\test\\app.js'</span><span class="token punctuation">,</span>loaded<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>children<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>paths<span class="token punctuation">:</span><span class="token punctuation">[</span> <span class="token string">'E:\\node\\test\\node_modules'</span><span class="token punctuation">,</span><span class="token string">'E:\\node\\node_modules'</span><span class="token punctuation">,</span><span class="token string">'E:\\node\\node\\node_modules'</span><span class="token punctuation">,</span><span class="token string">'E:\\node\\node_modules'</span><span class="token punctuation">,</span><span class="token string">'E:\\node_modules'</span> <span class="token punctuation">]</span> <span class="token punctuation">}</span></code></pre><p>这是app.js文件输出的module对象, 相信对大家.应该都能猜到里面各个参数的意思.但对新手来说. exports 确是个深深的坑.<br>我们来修改下app.js</p><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> foo <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"./foo"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><p>新建foo.js</p><pre class=" language-javascript"><code class="language-javascript">module<span class="token punctuation">.</span>exports<span class="token punctuation">.</span>hello <span class="token operator">=</span> <span class="token string">'bbb'</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>exports<span class="token punctuation">.</span>hello<span class="token punctuation">)</span>exports<span class="token punctuation">.</span>hello <span class="token operator">=</span> <span class="token string">'aaa'</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>module<span class="token punctuation">.</span>exports<span class="token punctuation">.</span>hello<span class="token punctuation">)</span></code></pre><p>输出:</p><pre><code>bbbaaa</code></pre><p>哎哟 我们操作是同个东西吗. 没错.这就是开篇的那个结论. 但接下来. 有意思的东西. 继续改<br>app.js</p><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> foo <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"./foo"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>foo<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><p>foo.js</p><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> View <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>View<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>test <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'test'</span><span class="token punctuation">)</span><span class="token punctuation">}</span>View<span class="token punctuation">.</span>test1 <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'test1'</span><span class="token punctuation">)</span><span class="token punctuation">}</span>exports <span class="token operator">=</span> View<span class="token punctuation">;</span></code></pre><p>我预期它会给我输出View这个function对象 (因为我javascript很矬所以预期错了.) 结果返回了  {}</p><p>怎么了?没怎么.理解彻底错了呗. 继续改:<br>app.js</p><pre class=" language-javascript"><code class="language-javascript"><span class="token operator">...</span><span class="token punctuation">.</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>foo<span class="token punctuation">.</span>view<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><p>foo.js</p><pre class=" language-javascript"><code class="language-javascript"><span class="token operator">...</span><span class="token punctuation">.</span>exports<span class="token punctuation">.</span>view <span class="token operator">=</span> View<span class="token punctuation">;</span></code></pre><p>终于正常输出了. 好像明白什么了.    require 真正返回的是module的exports属性. 而  单纯foo.js中的exports  只不过是module的exports属性的引用 .  直接对exports赋值.对module是没有任何改变的.当然不会正常输出.  这就完了吗? 没有. 下面算是语法分析了.  foo.js再改  我要给我导出的对象用exports加点属性</p><pre class=" language-javascript"><code class="language-javascript"><span class="token operator">...</span><span class="token punctuation">.</span><span class="token comment" spellcheck="true">// exports.view = View;</span>module<span class="token punctuation">.</span>exports <span class="token operator">=</span>  View<span class="token punctuation">;</span>exports <span class="token operator">=</span> <span class="token keyword">function</span>  <span class="token punctuation">(</span>argument<span class="token punctuation">)</span> <span class="token punctuation">{</span>    <span class="token comment" spellcheck="true">// body...</span><span class="token punctuation">}</span></code></pre><p>结果.  它还真xxx了.   我的xxx属性呢. </p><pre class=" language-javascript"><code class="language-javascript"><span class="token punctuation">{</span> <span class="token punctuation">[</span>Function<span class="token punctuation">]</span> test1<span class="token punctuation">:</span> <span class="token punctuation">[</span>Function<span class="token punctuation">]</span> <span class="token punctuation">}</span></code></pre><p>唉.这次真的是硬伤问题了.  module.exports = View   这不是也改了 module的exports  而  exports还是指向原来的那个{} </p><p>所以foo.js的正确姿势</p><pre class=" language-javascript"><code class="language-javascript"><span class="token operator">...</span><span class="token punctuation">.</span>exports <span class="token operator">=</span> module<span class="token punctuation">.</span>exports <span class="token operator">=</span>  View<span class="token punctuation">;</span>exports<span class="token punctuation">.</span>xxx<span class="token operator">=</span> <span class="token keyword">function</span>  <span class="token punctuation">(</span>argument<span class="token punctuation">)</span> <span class="token punctuation">{</span>    <span class="token comment" spellcheck="true">// body...</span><span class="token punctuation">}</span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> javascript </category>
+          
+          <category> node </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> node </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>使用hexo在github上建站</title>
+      <link href="/2016/05/21/hexo-github-pages.html"/>
+      <url>/2016/05/21/hexo-github-pages.html</url>
+      
+        <content type="html"><![CDATA[<p>网络上已经有非常多的使用hexo 建立blog的帖子了. 这边这个日志.只是用来备忘的(也许还带着点吐槽).</p><p>首先hexo是基于node, 如果是搞软件开发的兄弟, 推荐顺手把node也学了, 这玩意真心不错.<br>hexo 的官方网站 <a href="https://hexo.io/" title="hexo" target="_blank" rel="noopener">https://hexo.io/</a> 一上来就是安装方法.很容易而且英语也很好懂.不多说了(然后槽点就来了,感谢GFW让我下载”飞”一样的快).<br><a id="more"></a><br>网上说hexo在安装的时候因为判断语言的时候会卡死.node先升级到了最新的版本.同时开了代理.别问我到底哪个操作导致成功的,我没那时间再试一次了.太特么恶心了.</p><p>如果报这个错误. <code>java Error: Deployer not found : github,</code>则需要执行:(再次卡死…)<br><code>npm install hexo-deployer-git --save</code> 同时把_config.yml文件 deploy下面的type改成git  同时,repository 指向你的github对应的仓库上</p><p>域名解析. 在source下新建CNAME文件, 把你需要解析的域名写进去就行了.   比如我的 blog.zhu8fei.com</p><p>总算只剩下 hexo的语法问题了, hexo默认主题landscape使用ejs模板 , 如果会express的话. 编辑起来就非常容易了.</p><p>当前这个主题, 有部分修改. 都是小改动. 使用360CDN镜像 替换了google的资源(WTF GFW).参考这篇<a href="http://dev.duoshuo.com/threads/541d3b2b40b5abcd2e4df0e9" target="_blank" rel="noopener">Hexo使用多说教程</a>添加了评论功能,改起来也是超级容易.</p><p>加评论的程中, 评论怎么也出不来. 玩着玩着报了这个  <code>Cannot read property &#39;compile&#39; of undefined</code> 找了半天问题没搞定. 网上搜了半天 .都说 <code>hexo init</code> init 你妹啊. 幸亏老子一直有push github 直接 init会把.git都干掉就更别说做了这么多的修改了. 最终找到的解决办法 居然是<code>npm install</code>. 这算是hexo的bug吗?不清楚反正这个挺坑.</p><p>最后整体感觉. 时间主要扔在改页面样式上了. 估计后续还会继续改.</p><p>2016/05/24 零点被坑死. <code>Cannot read property &#39;compile&#39; of undefined</code> 这个问题的原因, 是一个倒霉的tab 导致页面整个404了.  真是good work . md文件的头部信息中,注意不要写空tab. 会解析失败的. github果然是非常给力,发现这个问题先是搜了一大堆无关信息. 但最后发现github 仓库里面有深红的颜色 . 感觉不正常就随手改了下试试. </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> blog </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> github </tag>
+            
+            <tag> web </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>my hexo guide</title>
+      <link href="/2016/05/20/hello-world.html"/>
+      <url>/2016/05/20/hello-world.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="Hexo的常用命令"><a href="#Hexo的常用命令" class="headerlink" title="Hexo的常用命令"></a>Hexo的常用命令</h2><h3 id="init-a-blog"><a href="#init-a-blog" class="headerlink" title="init a blog"></a>init a blog</h3><pre><code>$ hexo init blog</code></pre><h3 id="本地安装"><a href="#本地安装" class="headerlink" title="本地安装"></a>本地安装</h3><pre><code>$ npm install hexo-cli -g</code></pre><a id="more"></a><h3 id="init-a-exist-blog"><a href="#init-a-exist-blog" class="headerlink" title="init a exist blog"></a>init a exist blog</h3><pre><code>$ npm install --save</code></pre><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code>$ hexo new &quot;My New Post&quot;</code></pre><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Clean-static-files"><a href="#Clean-static-files" class="headerlink" title="Clean static files"></a>Clean static files</h3><pre><code>$ hexo clean</code></pre><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code>$ hexo generate$ hexo g</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code>$ hexo server$ hexo s</code></pre><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code>$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p><h2 id="uml工具"><a href="#uml工具" class="headerlink" title="uml工具"></a>uml工具</h2><h3 id="mermaid"><a href="#mermaid" class="headerlink" title="mermaid"></a>mermaid</h3><p>cdn : <a href="http://www.bootcdn.cn/" target="_blank" rel="noopener">http://www.bootcdn.cn/</a><br>个性修改:</p><ol><li>关闭_config.xml中默认的 <code>highlight.enable=false</code></li><li>修改after-footer.ejs把jquery拿到head.ejs中. 提前加载防止各种找不到jquery的问题.</li><li>修改head.js</li></ol><pre><code>&lt;% if (config.highlight.enable){ %&gt;&lt;!-- &lt;link href=&quot;//fonts.googleapis.com/css?family=Source+Code+Pro&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;--&gt;&lt;!-- WTF GFW 360 mirrors --&gt;&lt;link href=&quot;//fonts.useso.com/css?family=Source+Code+Pro&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;&lt;% } %&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;//cdn.bootcss.com/highlight.js/9.8.0/styles/monokai.min.css&quot;&gt;&lt;script src=&quot;//cdn.bootcss.com/highlight.js/9.8.0/highlight.min.js&quot;&gt;&lt;/script&gt;&lt;script src=&quot;//cdn.bootcss.com/highlightjs-line-numbers.js/1.1.0/highlightjs-line-numbers.js&quot;&gt;&lt;/script&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;//cdn.bootcss.com/mermaid/6.0.0/mermaid.forest.min.css&quot;&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;//cdn.bootcss.com/mermaid/6.0.0/mermaid.min.js&quot;&gt;&lt;/script&gt;</code></pre><ol><li>footer.ejs添加<pre><code>&lt;script type=&quot;text/javascript&quot;&gt;$(document).ready(function() { // 不要用highlight渲染uml图 $(&#39;pre code&#39;).not(&quot;.mermaid&quot;).each(function(i, block) {   hljs.highlightBlock(block);   hljs.initLineNumbersOnLoad(); }); // 底色防坑. $(&quot;.mermaid&quot;).parent().css(&quot;background&quot;,&quot;#ffffff&quot;); // 只渲染mermaid样式的对象. mermaid.init({startOnLoad:true},$(&quot;.mermaid&quot;));})&lt;/script&gt;</code></pre></li><li>代码样式 ```mermaid 开头 就可以使用mermaid语法画图了.</li><li>例子<pre><code>``` mermaidgraph LRA--&gt;BI&gt;XX]``` mermaid graph LRA--&gt;B I&gt;XX]</code></pre></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> javascript </category>
+          
+          <category> node </category>
+          
+          <category> hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> 网站建设 </tag>
+            
+            <tag> node </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
