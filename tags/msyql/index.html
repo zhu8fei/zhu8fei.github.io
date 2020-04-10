@@ -256,15 +256,15 @@
     <div class="tags-list">
     
     <li class="article-tag-list-item">
+        <a class="color5">node</a>
+    </li>
+    
+    <li class="article-tag-list-item">
         <a class="color5">hexo</a>
     </li>
     
     <li class="article-tag-list-item">
         <a class="color5">网站建设</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color5">node</a>
     </li>
     
     <li class="article-tag-list-item">
@@ -343,7 +343,7 @@
         
         <a  class="javascript node hexo "
            href="/2016/05/20/hello-world.html"
-           data-tag="hexo,网站建设,node"
+           data-tag="node,hexo,网站建设"
            data-author="" >
             <span class="post-title" title="my hexo guide">my hexo guide</span>
             <span class="post-date" title="2016-05-20 20:26:06">2016/05/20</span>
@@ -372,7 +372,7 @@
         <hr/>
         <p>作者：Intopass<br>链接：<a href="https://www.zhihu.com/question/29769130/answer/45546231" target="_blank" rel="noopener">https://www.zhihu.com/question/29769130/answer/45546231</a><br>来源：知乎<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
 <p>一：常规办法<br>1.删除无用的分支</p>
-<pre><code class="bash"> git branch -d &lt;branch_name&gt;
+<pre><code> git branch -d &lt;branch_name&gt;
 </code></pre>
         <div style="float:right">发布于: <span class="post-date" title="2018-01-11 10:56:40">2018/01/11</span></div>
       </article>
@@ -389,7 +389,7 @@
         <p>本地安装个mysql容易吗.</p>
 <h2 id="0x00-准备工作"><a href="#0x00-准备工作" class="headerlink" title="0x00 准备工作"></a>0x00 准备工作</h2><p>mysql.zip 下载地址: 我很懒.没找到.<br>解压并找到对应目录. 修改my.ini文件  默认会有一个my-default.ini文件.  没时间解释了,快copy.</p>
 <h2 id="0x01-my-ini"><a href="#0x01-my-ini" class="headerlink" title="0x01 my.ini"></a>0x01 my.ini</h2><p>utf8 不解释.</p>
-<pre><code class="bash">collation-server = utf8_unicode_ci
+<pre><code>collation-server = utf8_unicode_ci
 init-connect=&#39;SET NAMES utf8&#39;
 character-set-server = utf8
 [client]
@@ -424,12 +424,11 @@ default-character-set=utf8
         </a></H1>
         <hr/>
         <p>我是看<a title="七天学会NodeJS" href="http://nqdeng.github.io/7-days-nodejs/" target="_blank" rel="noopener">七天学会NodeJS</a> 入的坑. 结果被一同事给问住了. exports和module.exports有啥区别.作为一新手.根本没搞清楚. 一翻测试得到了如下的结论</p>
-<pre><code class="javascript">exports = module.exports
-</code></pre>
-<p>不过别急.里面有好多有意思的东西</p>
+<pre><code>exports = module.exports
+</code></pre><p>不过别急.里面有好多有意思的东西</p>
 <p>首先.nodejs启动后,会为每个加载的js文件会产生一个module对象(此处待验证因为没仔细找相关文档,只是目测结果)</p>
 <p>app.js文件代码:</p>
-<pre><code class="javascript">console.log(module)
+<pre><code>console.log(module)
 </code></pre>
         <div style="float:right">发布于: <span class="post-date" title="2016-05-22 21:42:14">2016/05/22</span></div>
       </article>
@@ -452,7 +451,7 @@ default-character-set=utf8
       <article class="index">
         <H1 class="article-title"><a  class="javascript node hexo "
            href="/2016/05/20/hello-world.html"
-           data-tag="hexo,网站建设,node"
+           data-tag="node,hexo,网站建设"
            data-author="" >
             <span class="post-title" title="my hexo guide">my hexo guide</span>
         </a></H1>
@@ -540,7 +539,7 @@ default-character-set=utf8
     /*作者、标签的自动补全*/
     $(function () {
         $('.search').AutoComplete({
-            'data': ['#hexo','#网站建设','#node','#github','#web','#管理','#msyql','#linux','#git',],
+            'data': ['#node','#hexo','#网站建设','#github','#web','#管理','#msyql','#linux','#git',],
             'itemHeight': 20,
             'width': 418
         }).AutoComplete('show');

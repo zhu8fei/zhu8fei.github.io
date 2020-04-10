@@ -256,15 +256,15 @@
     <div class="tags-list">
     
     <li class="article-tag-list-item">
+        <a class="color5">node</a>
+    </li>
+    
+    <li class="article-tag-list-item">
         <a class="color5">hexo</a>
     </li>
     
     <li class="article-tag-list-item">
         <a class="color5">网站建设</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color5">node</a>
     </li>
     
     <li class="article-tag-list-item">
@@ -343,7 +343,7 @@
         
         <a  class="javascript node hexo "
            href="/2016/05/20/hello-world.html"
-           data-tag="hexo,网站建设,node"
+           data-tag="node,hexo,网站建设"
            data-author="" >
             <span class="post-title" title="my hexo guide">my hexo guide</span>
             <span class="post-date" title="2016-05-20 20:26:06">2016/05/20</span>
@@ -389,7 +389,7 @@
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2020-04-09 16:54:34'>2016-08-02 15:55</time>
+        创建时间:<time class="date" title='更新时间: 2020-04-10 10:40:26'>2016-08-02 15:55</time>
         
     </div>
     <div class="article-meta">
@@ -441,23 +441,19 @@
         <p>本地安装个mysql容易吗.</p>
 <h2 id="0x00-准备工作"><a href="#0x00-准备工作" class="headerlink" title="0x00 准备工作"></a>0x00 准备工作</h2><p>mysql.zip 下载地址: 我很懒.没找到.<br>解压并找到对应目录. 修改my.ini文件  默认会有一个my-default.ini文件.  没时间解释了,快copy.</p>
 <h2 id="0x01-my-ini"><a href="#0x01-my-ini" class="headerlink" title="0x01 my.ini"></a>0x01 my.ini</h2><p>utf8 不解释.</p>
-<pre class=" language-bash"><code class="language-bash">collation-server <span class="token operator">=</span> utf8_unicode_ci
-init-connect<span class="token operator">=</span><span class="token string">'SET NAMES utf8'</span>
-character-set-server <span class="token operator">=</span> utf8
-<span class="token punctuation">[</span>client<span class="token punctuation">]</span>
-default-character-set<span class="token operator">=</span>utf8
-</code></pre>
-<a id="more"></a>
+<pre><code>collation-server = utf8_unicode_ci
+init-connect=&#39;SET NAMES utf8&#39;
+character-set-server = utf8
+[client]
+default-character-set=utf8
+</code></pre><a id="more"></a>
 <h2 id="0x02-环境变量"><a href="#0x02-环境变量" class="headerlink" title="0x02 环境变量"></a>0x02 环境变量</h2><p>添加bin目录到path</p>
-<h2 id="0x03-mysql服务初始化"><a href="#0x03-mysql服务初始化" class="headerlink" title="0x03 mysql服务初始化"></a>0x03 mysql服务初始化</h2><pre class=" language-bash"><code class="language-bash">mysqld --initialize-insecure --user<span class="token operator">=</span>root
-mysqld <span class="token function">install</span>
-</code></pre>
-<h2 id="0x04-修改root密码"><a href="#0x04-修改root密码" class="headerlink" title="0x04 修改root密码"></a>0x04 修改root密码</h2><p>非必须</p>
-<pre class=" language-bash"><code class="language-bash">mysqladmin -u root password <span class="token punctuation">[</span>密码<span class="token punctuation">]</span>
-</code></pre>
-<h2 id="0x05-检查字符集"><a href="#0x05-检查字符集" class="headerlink" title="0x05 检查字符集"></a>0x05 检查字符集</h2><pre class=" language-bash"><code class="language-bash">SHOW VARIABLES LIKE <span class="token string">'character%'</span><span class="token punctuation">;</span>
-</code></pre>
-<p>正常姿势.  坑了也别怕. 因为刚刚安装好.  还可以把服务停了之后去修改my.ini . 重复0x01步骤.</p>
+<h2 id="0x03-mysql服务初始化"><a href="#0x03-mysql服务初始化" class="headerlink" title="0x03 mysql服务初始化"></a>0x03 mysql服务初始化</h2><pre><code>mysqld --initialize-insecure --user=root
+mysqld install
+</code></pre><h2 id="0x04-修改root密码"><a href="#0x04-修改root密码" class="headerlink" title="0x04 修改root密码"></a>0x04 修改root密码</h2><p>非必须</p>
+<pre><code>mysqladmin -u root password [密码]
+</code></pre><h2 id="0x05-检查字符集"><a href="#0x05-检查字符集" class="headerlink" title="0x05 检查字符集"></a>0x05 检查字符集</h2><pre><code>SHOW VARIABLES LIKE &#39;character%&#39;;
+</code></pre><p>正常姿势.  坑了也别怕. 因为刚刚安装好.  还可以把服务停了之后去修改my.ini . 重复0x01步骤.</p>
 <pre><code>+--------------------------+--------+
 | Variable_name            | Value  |
 +--------------------------+--------+
@@ -470,20 +466,17 @@ mysqld <span class="token function">install</span>
 | character_set_system     | utf8   |
 | character_sets_dir       |[我删了]|
 +--------------------------+--------+
-</code></pre><h2 id="0x06-赋权限"><a href="#0x06-赋权限" class="headerlink" title="0x06 赋权限"></a>0x06 赋权限</h2><pre class=" language-bash"><code class="language-bash">grant <span class="token punctuation">[</span>权限1,权限2, <span class="token punctuation">..</span>.   或者 all <span class="token punctuation">]</span> on <span class="token punctuation">[</span>实例<span class="token punctuation">]</span>.<span class="token punctuation">[</span>表<span class="token punctuation">]</span> to <span class="token string">'[用户]'</span>@<span class="token string">'[ip]'</span> <span class="token punctuation">[</span> identified by <span class="token string">'密码'</span> <span class="token punctuation">]</span><span class="token punctuation">;</span>
-</code></pre>
-<p>IP 可以使用% 做为全网段控制, 通用样例.</p>
+</code></pre><h2 id="0x06-赋权限"><a href="#0x06-赋权限" class="headerlink" title="0x06 赋权限"></a>0x06 赋权限</h2><pre><code>grant [权限1,权限2, ...   或者 all ] on [实例].[表] to &#39;[用户]&#39;@&#39;[ip]&#39; [ identified by &#39;密码&#39; ];
+</code></pre><p>IP 可以使用% 做为全网段控制, 通用样例.</p>
 <pre class=" language-bash"><code class="language-bash">    grant all on *.* to <span class="token string">'root'</span>@<span class="token string">'%'</span><span class="token punctuation">;</span>
 </code></pre>
-<h2 id="0x07-删除密码"><a href="#0x07-删除密码" class="headerlink" title="0x07 删除密码"></a>0x07 删除密码</h2><pre class=" language-bash"><code class="language-bash">mysql -u root -p 
-mysql<span class="token operator">></span>use mysql<span class="token punctuation">;</span> 
-mysql<span class="token operator">></span>update user <span class="token keyword">set</span> password<span class="token operator">=</span><span class="token string">''</span> where user<span class="token operator">=</span><span class="token string">'root'</span><span class="token punctuation">;</span>
-</code></pre>
-<p>需要重启mysql服务</p>
+<h2 id="0x07-删除密码"><a href="#0x07-删除密码" class="headerlink" title="0x07 删除密码"></a>0x07 删除密码</h2><pre><code>mysql -u root -p 
+mysql&gt;use mysql; 
+mysql&gt;update user set password=&#39;&#39; where user=&#39;root&#39;;
+</code></pre><p>需要重启mysql服务</p>
 <h2 id="0x08-服务默认启动"><a href="#0x08-服务默认启动" class="headerlink" title="0x08 服务默认启动"></a>0x08 服务默认启动</h2><p>这个应该写在linux服务相关的文档中的. </p>
-<pre class=" language-bash"><code class="language-bash"><span class="token function">chkconfig</span>  mysqld on
-</code></pre>
-<h2 id="0x99-其它问题"><a href="#0x99-其它问题" class="headerlink" title="0x99 其它问题"></a>0x99 其它问题</h2><p>暂时没有. 哪天有了再补</p>
+<pre><code>chkconfig  mysqld on
+</code></pre><h2 id="0x99-其它问题"><a href="#0x99-其它问题" class="headerlink" title="0x99 其它问题"></a>0x99 其它问题</h2><p>暂时没有. 哪天有了再补</p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
@@ -501,7 +494,7 @@ mysql<span class="token operator">></span>update user <span class="token keyword
     
     <p><span class="copy-title">本文作者:</span><a  title="zhu8fei">zhu8fei</a></p>
     <p><span class="copy-title">发布时间:</span>2016-08-02, 15:55:33</p>
-    <p><span class="copy-title">最后更新:</span>2020-04-09, 16:54:34</p>
+    <p><span class="copy-title">最后更新:</span>2020-04-10, 10:40:26</p>
     <span class="copy-title">原始链接:</span><a class="post-url" href="/2016/08/02/mysql-init.html" title="绿色版mysql初始化">http://blog.zhu8fei.com/2016/08/02/mysql-init.html</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
@@ -586,7 +579,7 @@ mysql<span class="token operator">></span>update user <span class="token keyword
     /*作者、标签的自动补全*/
     $(function () {
         $('.search').AutoComplete({
-            'data': ['#hexo','#网站建设','#node','#github','#web','#管理','#msyql','#linux','#git',],
+            'data': ['#node','#hexo','#网站建设','#github','#web','#管理','#msyql','#linux','#git',],
             'itemHeight': 20,
             'width': 418
         }).AutoComplete('show');

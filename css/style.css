@@ -587,7 +587,7 @@ div.ac > ul > li:before,
   overflow: hidden;
 }
 .full-toc .post-toc a:hover {
-  color: #309e85;
+  color: #409eff;
 }
 .full-toc #rocket {
   position: fixed;
@@ -604,7 +604,7 @@ div.ac > ul > li:before,
   opacity: 1;
 }
 .full-toc #rocket:hover::before {
-  color: #449fdb;
+  color: #58b7ff;
 }
 .full-toc #rocket:before {
   content: "\e900";
@@ -622,7 +622,7 @@ div.ac > ul > li:before,
   position: absolute;
   bottom: 0px;
   right: -4px;
-  color: #449fdb;
+  color: #58b7ff;
 }
 .full-toc #rocket.launch:after {
   content: "\e9a9";
@@ -635,7 +635,7 @@ div.ac > ul > li:before,
 .nav-left {
   width: 120px;
   height: 100%;
-  background: #2a2935;
+  background: #222;
   box-shadow: inset -15px 0 15px -15px #222;
   float: left;
   position: relative;
@@ -676,7 +676,7 @@ div.ac > ul > li:before,
   line-height: 19px;
 }
 .nav-left .icon a:hover {
-  color: #309e85;
+  color: #fff;
 }
 .nav-left .icon a.rss:before {
   content: "\ea9b";
@@ -1031,7 +1031,7 @@ div.ac > ul > li:before,
 }
 .nav-right .title-list nav::-webkit-scrollbar-thumb,
 .nav-right .title-list #local-search-result::-webkit-scrollbar-thumb {
-  background: #309e85;
+  background: #409eff;
 }
 .nav-right .title-list nav .search-result-list,
 .nav-right .title-list #local-search-result .search-result-list {
@@ -1064,7 +1064,7 @@ div.ac > ul > li:before,
   left: 12px;
   z-index: 1;
   font-size: 18px;
-  color: #309e85;
+  color: #409eff;
 }
 .nav-right .title-list nav a#top:before,
 .nav-right .title-list #local-search-result a#top:before {
@@ -1320,15 +1320,15 @@ div.ac > ul > li:before,
 }
 .post .pjax article .article-meta {
   font-size: 0.9em;
-  color: #bcc1c4;
-  border-left: 3px solid #b4b4b4;
+  color: #50bfff;
+  border-left: 3px solid #20a0ff;
   padding-left: 10px;
 }
 .post .pjax article .article-meta .origin a {
   color: inherit;
 }
 .post .pjax article .article-meta .origin a:hover {
-  color: #4078c0;
+  color: #409eff;
 }
 .post .pjax article .article-meta .top-comment a {
   cursor: pointer;
@@ -1336,7 +1336,7 @@ div.ac > ul > li:before,
   font: 400 15px/1 "Open Sans", "Hiragino Sans GB", sans-serif;
 }
 .post .pjax article .article-meta .top-comment a:hover {
-  color: #4078c0;
+  color: #409eff;
 }
 .post .pjax article .article-meta .top:before {
   content: "\f08d";
@@ -1371,7 +1371,7 @@ div.ac > ul > li:before,
   color: inherit;
 }
 .post .pjax article .article-meta .book a:hover {
-  color: #4078c0;
+  color: #409eff;
 }
 .post .pjax article .article-meta .tag:before {
   content: "\e936";
@@ -1452,7 +1452,7 @@ div.ac > ul > li:before,
   display: none;
 }
 .post .pjax article a {
-  color: #4078c0;
+  color: #409eff;
   word-break: break-all;
   font-family: sans-serif;
 }
@@ -1615,7 +1615,7 @@ div.ac > ul > li:before,
   font-size: 20px;
   color: #fff;
   border: none;
-  background: #4094c7;
+  background: #50bfff;
   -webkit-border-radius: 50%;
   border-radius: 50%;
   text-align: center;
@@ -1635,7 +1635,7 @@ div.ac > ul > li:before,
   color: #bcc1c4;
 }
 .post .copyright a {
-  color: #4078c0;
+  color: #409eff;
   word-break: break-all;
   font-family: sans-serif;
 }
@@ -1645,22 +1645,20 @@ div.ac > ul > li:before,
 .post .article_copyright {
   padding: 5px 30px;
   margin-bottom: 20px;
-  background-color: #83b3c1;
+  background-color: #ecf8ff;
   border-radius: 8px;
   font-weight: 700;
   line-height: 22px;
-  color: #444;
+  color: #5e6d82;
   font-size: 16px;
 }
 .post .article_copyright .copy-title {
-  color: #000;
   margin-right: 10px;
 }
 .post .article_copyright>p {
   margin: 0;
 }
 .post .article_copyright a {
-  color: #595f67;
   word-break: break-all;
   font-family: sans-serif;
 }
@@ -1737,7 +1735,7 @@ h1 {
   width: 20px;
   height: 40px;
   border-radius: 0 100px 100px 0;
-  background-color: #42b983;
+  background-color: #20a0ff;
   cursor: pointer;
   margin-left: -20px;
   transition: margin-left 0.5s cubic-bezier(0.77, 0, 0.175, 1);
@@ -1909,7 +1907,7 @@ img.pswp__img {
     content: "\e98b";
   }
   .full-toc #rocket:hover::before {
-    color: #283444;
+    color: #58b7ff;
   }
   .full-toc #rocket.launch:before {
     color: #449fdb;

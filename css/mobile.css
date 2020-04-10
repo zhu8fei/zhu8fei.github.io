@@ -94,7 +94,7 @@
     content: "\e98b";
   }
   .full-toc #rocket:hover::before {
-    color: #283444;
+    color: #58b7ff;
   }
   .full-toc #rocket.launch:before {
     color: #449fdb;

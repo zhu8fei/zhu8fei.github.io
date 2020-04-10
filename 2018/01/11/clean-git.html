@@ -256,15 +256,15 @@
     <div class="tags-list">
     
     <li class="article-tag-list-item">
+        <a class="color5">node</a>
+    </li>
+    
+    <li class="article-tag-list-item">
         <a class="color5">hexo</a>
     </li>
     
     <li class="article-tag-list-item">
         <a class="color5">网站建设</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color5">node</a>
     </li>
     
     <li class="article-tag-list-item">
@@ -343,7 +343,7 @@
         
         <a  class="javascript node hexo "
            href="/2016/05/20/hello-world.html"
-           data-tag="hexo,网站建设,node"
+           data-tag="node,hexo,网站建设"
            data-author="" >
             <span class="post-title" title="my hexo guide">my hexo guide</span>
             <span class="post-date" title="2016-05-20 20:26:06">2016/05/20</span>
@@ -385,7 +385,7 @@
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2020-04-09 16:54:34'>2018-01-11 10:56</time>
+        创建时间:<time class="date" title='更新时间: 2020-04-10 10:40:17'>2018-01-11 10:56</time>
         
     </div>
     <div class="article-meta">
@@ -436,48 +436,40 @@
       
         <p>作者：Intopass<br>链接：<a href="https://www.zhihu.com/question/29769130/answer/45546231" target="_blank" rel="noopener">https://www.zhihu.com/question/29769130/answer/45546231</a><br>来源：知乎<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
 <p>一：常规办法<br>1.删除无用的分支</p>
-<pre class=" language-bash"><code class="language-bash"> <span class="token function">git</span> branch -d <span class="token operator">&lt;</span>branch_name<span class="token operator">></span>
-</code></pre>
-<a id="more"></a>
+<pre><code> git branch -d &lt;branch_name&gt;
+</code></pre><a id="more"></a>
 <p>2.删除无用的tag</p>
-<pre class=" language-bash"><code class="language-bash"><span class="token function">git</span> tag -d <span class="token operator">&lt;</span>tag_name<span class="token operator">></span>
-</code></pre>
-<p>3.清理本地版本库</p>
-<pre class=" language-bash"><code class="language-bash"><span class="token function">git</span> gc --prune<span class="token operator">=</span>now
-</code></pre>
-<p>二：高级办法<br>注意高级办法会导致push冲突，需要强制提交，其他人pull也会遇到冲突，建议重新克隆。<br>！！！注意这些操作都很危险，建议找个示例库进行测试，确保自己完全掌握之后再实际操作。</p>
+<pre><code>git tag -d &lt;tag_name&gt;
+</code></pre><p>3.清理本地版本库</p>
+<pre><code>git gc --prune=now
+</code></pre><p>二：高级办法<br>注意高级办法会导致push冲突，需要强制提交，其他人pull也会遇到冲突，建议重新克隆。<br>！！！注意这些操作都很危险，建议找个示例库进行测试，确保自己完全掌握之后再实际操作。</p>
 <p>1.完全重建版本库</p>
-<pre class=" language-bash"><code class="language-bash"><span class="token function">rm</span> -rf .git
-<span class="token function">git</span> init
-<span class="token function">git</span> add <span class="token keyword">.</span>
-<span class="token function">git</span> cm <span class="token string">"first commit"</span>
-<span class="token function">git</span> remote add origin <span class="token operator">&lt;</span>your_github_repo_url<span class="token operator">></span>
-<span class="token function">git</span> push -f -u origin master
+<pre><code>rm -rf .git
+git init
+git add .
+git cm &quot;first commit&quot;
+git remote add origin &lt;your_github_repo_url&gt;
+git push -f -u origin master
+</code></pre><p>2.有选择性的合并历史提交</p>
+<pre><code>git rebase -i &lt;first_commit&gt;
+</code></pre><p>会进入一个如下所示的文件</p>
+<pre><code>pick ba07c7d add bootstrap theme and format import
+pick 7d905b8 add newline at file last line
+pick 037313c fn up_first_char rename to caps
+pick 34e647e add fn of &amp;&amp; use for index.jsp
+pick 0175f03 rename common include
+pick 7f3f665 update group name &amp;&amp; update config
+</code></pre><p>将想合并的提交的pick改成s，如</p>
+<pre><code>pick ba07c7d add bootstrap theme and format import
+pick 7d905b8 add newline at file last line
+pick 037313c fn up_first_char rename to caps
+s 34e647e add fn of &amp;&amp; use for index.jsp
+pick 0175f03 rename common include
+pick 7f3f665 update group name &amp;&amp; update config
+</code></pre><p>这样第四个提交就会合并进入第三个提交。<br>等合并完提交之后再运行</p>
+<pre><code> git push -f
+ git gc --prune=now
 </code></pre>
-<p>2.有选择性的合并历史提交</p>
-<pre class=" language-bash"><code class="language-bash"><span class="token function">git</span> rebase -i <span class="token operator">&lt;</span>first_commit<span class="token operator">></span>
-</code></pre>
-<p>会进入一个如下所示的文件</p>
-<pre class=" language-bash"><code class="language-bash">pick ba07c7d add bootstrap theme and <span class="token function">format</span> <span class="token function">import</span>
-pick 7d905b8 add newline at <span class="token function">file</span> last line
-pick 037313c fn up_first_char <span class="token function">rename</span> to caps
-pick 34e647e add fn of <span class="token operator">&amp;&amp;</span> use <span class="token keyword">for</span> index.jsp
-pick 0175f03 <span class="token function">rename</span> common include
-pick 7f3f665 update group name <span class="token operator">&amp;&amp;</span> update config
-</code></pre>
-<p>将想合并的提交的pick改成s，如</p>
-<pre class=" language-bash"><code class="language-bash">pick ba07c7d add bootstrap theme and <span class="token function">format</span> <span class="token function">import</span>
-pick 7d905b8 add newline at <span class="token function">file</span> last line
-pick 037313c fn up_first_char <span class="token function">rename</span> to caps
-s 34e647e add fn of <span class="token operator">&amp;&amp;</span> use <span class="token keyword">for</span> index.jsp
-pick 0175f03 <span class="token function">rename</span> common include
-pick 7f3f665 update group name <span class="token operator">&amp;&amp;</span> update config
-</code></pre>
-<p>这样第四个提交就会合并进入第三个提交。<br>等合并完提交之后再运行</p>
-<pre class=" language-bash"><code class="language-bash"> <span class="token function">git</span> push -f
- <span class="token function">git</span> gc --prune<span class="token operator">=</span>now
-</code></pre>
-
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
     </div>
@@ -494,7 +486,7 @@ pick 7f3f665 update group name <span class="token operator">&amp;&amp;</span> up
     
     <p><span class="copy-title">本文作者:</span><a  title="zhu8fei">zhu8fei</a></p>
     <p><span class="copy-title">发布时间:</span>2018-01-11, 10:56:40</p>
-    <p><span class="copy-title">最后更新:</span>2020-04-09, 16:54:34</p>
+    <p><span class="copy-title">最后更新:</span>2020-04-10, 10:40:17</p>
     <span class="copy-title">原始链接:</span><a class="post-url" href="/2018/01/11/clean-git.html" title="clean-git">http://blog.zhu8fei.com/2018/01/11/clean-git.html</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
@@ -579,7 +571,7 @@ pick 7f3f665 update group name <span class="token operator">&amp;&amp;</span> up
     /*作者、标签的自动补全*/
     $(function () {
         $('.search').AutoComplete({
-            'data': ['#hexo','#网站建设','#node','#github','#web','#管理','#msyql','#linux','#git',],
+            'data': ['#node','#hexo','#网站建设','#github','#web','#管理','#msyql','#linux','#git',],
             'itemHeight': 20,
             'width': 418
         }).AutoComplete('show');
