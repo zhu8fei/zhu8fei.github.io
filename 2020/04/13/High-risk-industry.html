@@ -2,9 +2,9 @@
 <html>
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
-  <title>使用hexo在github上建站 | zhu8fei</title>
-  <meta name="keywords" content=" hexo , github , web ">
-  <meta name="description" content="使用hexo在github上建站 | zhu8fei">
+  <title>高危行业 | zhu8fei</title>
+  <meta name="keywords" content=" Book ">
+  <meta name="description" content="高危行业 | zhu8fei">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="一把年纪, 文盲, 屌丝码农, 又懒, 又蠢萌, 折腾系, 辍学党, 非典型精分.奇葩的经历. 对化肥的了解. 远远高于对计算机的了解.">
 <meta property="og:type" content="website">
@@ -387,9 +387,9 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-hexo-github-pages" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-High-risk-industry" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">使用hexo在github上建站</h1>
+        <h1 class="article-title">高危行业</h1>
     
     <div class="article-meta">
         
@@ -397,25 +397,21 @@
         
         <span class="book">
             
-                <a  data-rel="blog">blog</a>
+                <a  data-rel="职业生涯">职业生涯</a>
             
         </span>
         
         
         <span class="tag">
             
-            <a class="color5">hexo</a>
-            
-            <a class="color2">github</a>
-            
-            <a class="color4">web</a>
+            <a class="color5">Book</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2020-04-09 16:54:34'>2016-05-21 20:26</time>
+        创建时间:<time class="date" title='更新时间: 2020-04-13 15:49:24'>2020-04-13 11:44</time>
         
     </div>
     <div class="article-meta">
@@ -448,7 +444,7 @@
     
     <div class="toc-ref">
     
-        
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#从被鄙视到自我怀疑"><span class="toc-text">从被鄙视到自我怀疑</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#工作时长"><span class="toc-text">工作时长</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#不靠谱的工作"><span class="toc-text">不靠谱的工作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#总结"><span class="toc-text">总结</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -464,15 +460,20 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>网络上已经有非常多的使用hexo 建立blog的帖子了. 这边这个日志.只是用来备忘的(也许还带着点吐槽).</p>
-<p>首先hexo是基于node, 如果是搞软件开发的兄弟, 推荐顺手把node也学了, 这玩意真心不错.<br>hexo 的官方网站 <a href="https://hexo.io/" title="hexo" target="_blank" rel="noopener">https://hexo.io/</a> 一上来就是安装方法.很容易而且英语也很好懂.不多说了(然后槽点就来了,感谢GFW让我下载”飞”一样的快).<br><a id="more"></a><br>网上说hexo在安装的时候因为判断语言的时候会卡死.node先升级到了最新的版本.同时开了代理.别问我到底哪个操作导致成功的,我没那时间再试一次了.太特么恶心了.</p>
-<p>如果报这个错误. <code>java Error: Deployer not found : github,</code>则需要执行:(再次卡死…)<br><code>npm install hexo-deployer-git --save</code> 同时把_config.yml文件 deploy下面的type改成git  同时,repository 指向你的github对应的仓库上</p>
-<p>域名解析. 在source下新建CNAME文件, 把你需要解析的域名写进去就行了.   比如我的 blog.zhu8fei.com</p>
-<p>总算只剩下 hexo的语法问题了, hexo默认主题landscape使用ejs模板 , 如果会express的话. 编辑起来就非常容易了.</p>
-<p>当前这个主题, 有部分修改. 都是小改动. 使用360CDN镜像 替换了google的资源(WTF GFW).参考这篇<a href="http://dev.duoshuo.com/threads/541d3b2b40b5abcd2e4df0e9" target="_blank" rel="noopener">Hexo使用多说教程</a>添加了评论功能,改起来也是超级容易.</p>
-<p>加评论的程中, 评论怎么也出不来. 玩着玩着报了这个  <code>Cannot read property &#39;compile&#39; of undefined</code> 找了半天问题没搞定. 网上搜了半天 .都说 <code>hexo init</code> init 你妹啊. 幸亏老子一直有push github 直接 init会把.git都干掉就更别说做了这么多的修改了. 最终找到的解决办法 居然是<code>npm install</code>. 这算是hexo的bug吗?不清楚反正这个挺坑.</p>
-<p>最后整体感觉. 时间主要扔在改页面样式上了. 估计后续还会继续改.</p>
-<p>2016/05/24 零点被坑死. <code>Cannot read property &#39;compile&#39; of undefined</code> 这个问题的原因, 是一个倒霉的tab 导致页面整个404了.  真是good work . md文件的头部信息中,注意不要写空tab. 会解析失败的. github果然是非常给力,发现这个问题先是搜了一大堆无关信息. 但最后发现github 仓库里面有深红的颜色 . 感觉不正常就随手改了下试试. </p>
+        <p>上篇文章里面我们讲过这个大蛋糕有多香. 和大多数人不太一样. 我进入这个行业. 是因为对计算机的热爱.所以我跳过了一半的”高危”. 比起被鄙视, 我们的人生发展才是更关键的. 在踩进软件行业这个大坑之前, 先看看自己是不是合适这个行业吧. </p>
+<a id="more"></a>
+<h2 id="从被鄙视到自我怀疑"><a href="#从被鄙视到自我怀疑" class="headerlink" title="从被鄙视到自我怀疑"></a>从被鄙视到自我怀疑</h2><p>这还得从被鄙视说起来.  在<a href="/2020/04/10/career-init.html">一切的开始</a>里面提到,大量从业者是非软件行业甚至是初中文化. 这帮人有个什么特点呢. 不爱学习. 而且这帮人, 希望通过短短的3个月培训就可以混到高薪行业中. 我先不说这有多搞笑, 请先想想. 这现实吗? 就是有那么些个孩子理解不了这个问题. </p>
+<p>那么各位系紧安全带.我要飚车了. 参看下图.</p>
+<p><img src="https://i.loli.net/2020/04/13/3LoBk9GCcWrq4tV.jpg" alt="java 技术栈."></p>
+<p>别点了.知道你看不清楚. 这内容不是本文重点(想看原图: <a href="https://www.cnblogs.com/yhood/p/11549966.html" target="_blank" rel="noopener">高级java技术栈图</a> ),只是让你知道光JAVA这一门技术点就多到吓死人. 这里面每个节点,都会有N本高等代数一样厚的教程.  我很负责任的告诉你, 这个图也绝对不是完整货.而且技术这个东西.每年都会有大量的新技术点诞生,好的技术很可能取代你辛辛苦苦学了几个月甚至几年的东西. 一个高级开发, 往往会多门语言, 还要掌握网络技术, 需求分析能力, 黑白盒测试能力.甚至有些大牛们还会自己运营.</p>
+<p>不爱学习? 还要进软件行业, 现在呵呵你不过分吧? </p>
+<h2 id="工作时长"><a href="#工作时长" class="headerlink" title="工作时长"></a>工作时长</h2><p>2019年闹的很火的996 这个事(同样求别喷,我个人并不支持但请看完). 软件客户才不会管你什么后半夜. 有问题我就想马上解决. 因为我马上就想用. 所以半夜被人从家里拉到公司干活并不是多奇怪的事. 再加上很多并不适合这个行业的人进入.导致工作效率变低. 本来一个人很容易完成的工作.被上下游干扰导致不能如期完成. 大量时间用来和同事搞来搞去. 让本来简简单单的软件开发变成了办公室骂战. 像我一样的爆脾气,不喜欢和人打交道的小伙伴们,要慎重考虑下了.</p>
+<p> 充电不能停, 工作外的自我学习时间, 几乎会占用你业余时间的全部. 就刚刚那个表, 多久可以学完? 伴随工作时间变长, 还有个比较要命的问题,竞争.  一个萝卜一个坑, 团队里面吃香的.也就那么一两个人.</p>
+<p>每年还有那么多不幸的同志们, 倒在工作岗位上. 有人觉得他们傻. 为什么很辛苦还坚持. 因为这个行业的人. 都在咬牙坚持. 觉得他们傻. 只能说明 你并不了解这个行业. 你并不真的喜欢这个行业. </p>
+<h2 id="不靠谱的工作"><a href="#不靠谱的工作" class="headerlink" title="不靠谱的工作"></a>不靠谱的工作</h2><p>你将有80%的时间. 并不是在码代码. 理需求, 与不同部门的人开会, 调试代码, 改bug , code review,不停的百度或google搜索答案. 超级多的重复工作.</p>
+<p>而且这个倒霉行业, 从诞生之日起, 就没有一个完整的考核办法. 连很多前沿大神都在自嘲说, 软件这个东西. 并算不上一个严谨的学科. 不能度量不能自圆其说. 没有完全正确的答案. 从问题产生开始. 问题本身都在一直不停的变化中.</p>
+<p>35岁定律, 这是个名字从30岁一点点变过来的定律. 年纪大了. 就干不动. 一样加班. 一样的工资. 可惜体力跟不上了.要么被公司裁掉.要么自己转行.35咯,你再去干 一个完全不了解的工作能行吗? 开发都干不下去的人.还有啥能干好?</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>让我这个热爱软件行业的人来泼冷水, 本来我是拒绝的.但正因为我热爱这个行业. 我就更希望不适合这个行业的小伙伴们. 能早点发现自己不适合它. 有太多可以比来学开发来钱快的道道. 回来郑州后,工资少的可怜. 有时候我自己也在想要不要开个水果店.  如果是不适合的人. 越是在这个行业混的久了.你会觉得上面说的东西.早点看到就好了. </p>
 
       
     </div>
@@ -480,12 +481,12 @@
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>使用hexo在github上建站</p>
+    <p><span class="copy-title">文章标题:</span>高危行业</p>
     
     <p><span class="copy-title">本文作者:</span><a  title="zhu8fei">zhu8fei</a></p>
-    <p><span class="copy-title">发布时间:</span>2016-05-21, 20:26:06</p>
-    <p><span class="copy-title">最后更新:</span>2020-04-09, 16:54:34</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2016/05/21/hexo-github-pages.html" title="使用hexo在github上建站">http://blog.zhu8fei.com/2016/05/21/hexo-github-pages.html</a>
+    <p><span class="copy-title">发布时间:</span>2020-04-13, 11:44:11</p>
+    <p><span class="copy-title">最后更新:</span>2020-04-13, 15:49:24</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/04/13/High-risk-industry.html" title="高危行业">http://blog.zhu8fei.com/2020/04/13/High-risk-industry.html</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>

@@ -1285,8 +1285,8 @@ div.ac > ul > li:before,
   margin-left: 1px;
 }
 .post ::selection {
-  color: #fff;
-  background: #33caa6;
+  color: #283444;
+  background: #50bfff;
   text-shadow: none;
 }
 .post .pjax {

@@ -2,9 +2,9 @@
 <html>
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
-  <title>使用hexo在github上建站 | zhu8fei</title>
-  <meta name="keywords" content=" hexo , github , web ">
-  <meta name="description" content="使用hexo在github上建站 | zhu8fei">
+  <title>一切的开始 | zhu8fei</title>
+  <meta name="keywords" content=" Book ">
+  <meta name="description" content="一切的开始 | zhu8fei">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="一把年纪, 文盲, 屌丝码农, 又懒, 又蠢萌, 折腾系, 辍学党, 非典型精分.奇葩的经历. 对化肥的了解. 远远高于对计算机的了解.">
 <meta property="og:type" content="website">
@@ -387,9 +387,9 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-hexo-github-pages" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-career-init" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">使用hexo在github上建站</h1>
+        <h1 class="article-title">一切的开始</h1>
     
     <div class="article-meta">
         
@@ -397,25 +397,21 @@
         
         <span class="book">
             
-                <a  data-rel="blog">blog</a>
+                <a  data-rel="职业生涯">职业生涯</a>
             
         </span>
         
         
         <span class="tag">
             
-            <a class="color5">hexo</a>
-            
-            <a class="color2">github</a>
-            
-            <a class="color4">web</a>
+            <a class="color5">Book</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2020-04-09 16:54:34'>2016-05-21 20:26</time>
+        创建时间:<time class="date" title='更新时间: 2020-04-13 11:47:09'>2020-04-10 11:28</time>
         
     </div>
     <div class="article-meta">
@@ -448,7 +444,7 @@
     
     <div class="toc-ref">
     
-        
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#软件行业现状"><span class="toc-text">软件行业现状</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#盘子够大"><span class="toc-text">盘子够大</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#用人企业"><span class="toc-text">用人企业</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#行业门槛低"><span class="toc-text">行业门槛低</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#双方的状态"><span class="toc-text">双方的状态</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#新人状态"><span class="toc-text">新人状态</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#企业状态"><span class="toc-text">企业状态</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#面试的小秘密"><span class="toc-text">面试的小秘密</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#结论"><span class="toc-text">结论</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -464,15 +460,51 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>网络上已经有非常多的使用hexo 建立blog的帖子了. 这边这个日志.只是用来备忘的(也许还带着点吐槽).</p>
-<p>首先hexo是基于node, 如果是搞软件开发的兄弟, 推荐顺手把node也学了, 这玩意真心不错.<br>hexo 的官方网站 <a href="https://hexo.io/" title="hexo" target="_blank" rel="noopener">https://hexo.io/</a> 一上来就是安装方法.很容易而且英语也很好懂.不多说了(然后槽点就来了,感谢GFW让我下载”飞”一样的快).<br><a id="more"></a><br>网上说hexo在安装的时候因为判断语言的时候会卡死.node先升级到了最新的版本.同时开了代理.别问我到底哪个操作导致成功的,我没那时间再试一次了.太特么恶心了.</p>
-<p>如果报这个错误. <code>java Error: Deployer not found : github,</code>则需要执行:(再次卡死…)<br><code>npm install hexo-deployer-git --save</code> 同时把_config.yml文件 deploy下面的type改成git  同时,repository 指向你的github对应的仓库上</p>
-<p>域名解析. 在source下新建CNAME文件, 把你需要解析的域名写进去就行了.   比如我的 blog.zhu8fei.com</p>
-<p>总算只剩下 hexo的语法问题了, hexo默认主题landscape使用ejs模板 , 如果会express的话. 编辑起来就非常容易了.</p>
-<p>当前这个主题, 有部分修改. 都是小改动. 使用360CDN镜像 替换了google的资源(WTF GFW).参考这篇<a href="http://dev.duoshuo.com/threads/541d3b2b40b5abcd2e4df0e9" target="_blank" rel="noopener">Hexo使用多说教程</a>添加了评论功能,改起来也是超级容易.</p>
-<p>加评论的程中, 评论怎么也出不来. 玩着玩着报了这个  <code>Cannot read property &#39;compile&#39; of undefined</code> 找了半天问题没搞定. 网上搜了半天 .都说 <code>hexo init</code> init 你妹啊. 幸亏老子一直有push github 直接 init会把.git都干掉就更别说做了这么多的修改了. 最终找到的解决办法 居然是<code>npm install</code>. 这算是hexo的bug吗?不清楚反正这个挺坑.</p>
-<p>最后整体感觉. 时间主要扔在改页面样式上了. 估计后续还会继续改.</p>
-<p>2016/05/24 零点被坑死. <code>Cannot read property &#39;compile&#39; of undefined</code> 这个问题的原因, 是一个倒霉的tab 导致页面整个404了.  真是good work . md文件的头部信息中,注意不要写空tab. 会解析失败的. github果然是非常给力,发现这个问题先是搜了一大堆无关信息. 但最后发现github 仓库里面有深红的颜色 . 感觉不正常就随手改了下试试. </p>
+        <p>最近有位搞培训的朋友和我聊, 刚刚毕业培训出来的学生, 找工作的时候被各种鄙视, 问我有没有啥办法. 这看似是个很常见的问题. 其实咱也是从这个被鄙视的 但深挖挖, 你会发现, 这里面水还挺深. 先来看看我这个半吊子的分析. 软件行业, 究竟是个什么鬼.</p>
+<a id="more"></a> 
+<h2 id="软件行业现状"><a href="#软件行业现状" class="headerlink" title="软件行业现状"></a>软件行业现状</h2><h3 id="盘子够大"><a href="#盘子够大" class="headerlink" title="盘子够大"></a>盘子够大</h3><p>软件行业, 是个非常大的盘子, 而且还在逐渐变大. 详细数据可以参考:  <a href="http://www.cac.gov.cn/2020-02/06/c_1582535330744910.htm" target="_blank" rel="noopener">2019年软件和信息技术服务业统计公报</a> . 总结下来每年7万亿收入. 年收益增长率15%. 从业人数670万, 年增速4.7% . 软件行业的平均年收入15万, 收入年增速为11%.   划个重点: 北上广, 新人工资过万.不是什么新鲜事.另外. 透露下2016年底.我从上海滚去郑州的时候.工资3万+ .而到郑州要砍去大半. 但就这样, 我还是想问还没工作的小伙伴们. 这蛋糕香不香. 但同样, 蛋糕能不能吃到嘴,同样很重要. 这是个 <a href="/2020/04/13/High-risk-industry.html">高危行业</a> .</p>
+<h3 id="用人企业"><a href="#用人企业" class="headerlink" title="用人企业"></a>用人企业</h3><p>只有你想不到的, 没有不用软件的. 从路边的门店, 到大型制造业的工厂. 软件行业从业人员, 主要集中在这些软件提供商, 按圈子里面认为环境好坏分: 软件自研企业, 第三方产品开发商, 软件外包服务商, 人力派遣公司. 当然也有非企业类自由从业者(很羡慕这种大神).  就企业来说, 对从业人员的职业技能要求天差地别. 一般来说. 也是按上述顺序. </p>
+<h3 id="行业门槛低"><a href="#行业门槛低" class="headerlink" title="行业门槛低"></a>行业门槛低</h3><ul>
+<li><p>企业校招</p>
+<p>会带走多数软件专业的学生</p>
+</li>
+<li><p>企业定向培训</p>
+<p>会带走大量应届软件行业和非软件行业的毕业生</p>
+</li>
+<li><p>社会培训</p>
+<p>不严谨的讲, 有初中学历, 经过3个月的专业培训就可以胜任大部分软件开发工作.  (喷子绕路, 以后有文章专门讲这块的东西的时候再喷.) </p>
+</li>
+</ul>
+<h2 id="双方的状态"><a href="#双方的状态" class="headerlink" title="双方的状态"></a>双方的状态</h2><h3 id="新人状态"><a href="#新人状态" class="headerlink" title="新人状态"></a>新人状态</h3><ul>
+<li><p>找工作时</p>
+<p>工作经验究竟是个什么鬼. 某技术要求没学过是要闹哪样. </p>
+</li>
+<li><p>刚刚入职时</p>
+<p>我是谁, 我在哪, 我在干什么</p>
+</li>
+<li><p>入职一段时间</p>
+<p>工作内容是什么, 我应该做什么, 我要如何融入团队. 我应该如何应对业务人员, 我应该如何应对领导. </p>
+</li>
+<li><p>心态</p>
+<p>基本和学生时代差异不大.</p>
+</li>
+</ul>
+<h3 id="企业状态"><a href="#企业状态" class="headerlink" title="企业状态"></a>企业状态</h3><ul>
+<li><p>招聘时</p>
+<p>这小弟行不行啊, 一看就是假简历, 就这还要干技术总监, 就这工资还要XXX.</p>
+</li>
+<li><p>入职时</p>
+<p>这是你的工位, 这是你的领导, 这是你的工作范围.</p>
+</li>
+<li><p>工作一段时间</p>
+<p>干这么久了, 应该能独挡一面了, 应该能写需求调研,独立开发,独立测试,上线验收 ….</p>
+</li>
+<li><p>基本要求</p>
+<p>你是个成年人, 应该对自己负责.</p>
+</li>
+</ul>
+<h3 id="面试的小秘密"><a href="#面试的小秘密" class="headerlink" title="面试的小秘密"></a>面试的小秘密</h3><p>新人往往觉得自己能力很强. 简历包装也到位. 该学的知识, 小项目实训 也都做到位了. 总觉得什么BAT都手到擒来了. 殊不知, 面试官大部分都是老油条. 拿到简历的第一时刻, 往往已经知道你是没有工作经验的小白了. 即使第一时间被你的简历唬住. 在面试过程中, 也是很容易就清楚你的底细.</p>
+<h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><p>新人不能很快适应企业的要求, 而企业对新手容忍度又和老员工不会有太多差异.而面试的时候.你又那么容易暴露. 不鄙视新手又会鄙视谁? 那新手朋友们.应该怎么办?  接着请看<a href="/2020/04/13/Attack-on-novice.html">进击的菜鸟</a></p>
 
       
     </div>
@@ -480,12 +512,12 @@
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>使用hexo在github上建站</p>
+    <p><span class="copy-title">文章标题:</span>一切的开始</p>
     
     <p><span class="copy-title">本文作者:</span><a  title="zhu8fei">zhu8fei</a></p>
-    <p><span class="copy-title">发布时间:</span>2016-05-21, 20:26:06</p>
-    <p><span class="copy-title">最后更新:</span>2020-04-09, 16:54:34</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2016/05/21/hexo-github-pages.html" title="使用hexo在github上建站">http://blog.zhu8fei.com/2016/05/21/hexo-github-pages.html</a>
+    <p><span class="copy-title">发布时间:</span>2020-04-10, 11:28:33</p>
+    <p><span class="copy-title">最后更新:</span>2020-04-13, 11:47:09</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/04/10/career-init.html" title="一切的开始">http://blog.zhu8fei.com/2020/04/10/career-init.html</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
