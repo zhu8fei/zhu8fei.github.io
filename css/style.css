@@ -1284,9 +1284,6 @@ div.ac > ul > li:before,
   font-weight: normal;
   margin-left: 1px;
 }
-.post p {
-  text-indent: 2em;
-}
 .post ::selection {
   color: #283444;
   background: #50bfff;
@@ -1317,6 +1314,9 @@ div.ac > ul > li:before,
 .post .pjax article {
   padding-top: 2.5em;
 /* Inline code */
+}
+.post .pjax article p {
+  text-indent: 2em;
 }
 .post .pjax article .article-entry>p:nth-child(1) {
   margin-top: 20px;
