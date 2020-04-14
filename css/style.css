@@ -1284,6 +1284,9 @@ div.ac > ul > li:before,
   font-weight: normal;
   margin-left: 1px;
 }
+.post p {
+  text-indent: 2em;
+}
 .post ::selection {
   color: #283444;
   background: #50bfff;
