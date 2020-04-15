@@ -147,22 +147,6 @@
     
         
             
-            <li><div data-rel="scm">scm</div>
-                
-            </li>
-            
-        
-    
-        
-            
-            <li><div data-rel="blog">blog</div>
-                
-            </li>
-            
-        
-    
-        
-            
             <li><div data-rel="javascript"><i class="fold iconfont icon-right"></i>javascript</div>
                 
                     <ul class="sub hide">
@@ -186,6 +170,14 @@
     
         
             
+            <li><div data-rel="blog">blog</div>
+                
+            </li>
+            
+        
+    
+        
+            
             <li><div data-rel="数据库"><i class="fold iconfont icon-right"></i>数据库</div>
                 
                     <ul class="sub hide">
@@ -195,6 +187,14 @@
                         </li>
                             
                     </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="scm">scm</div>
                 
             </li>
             
@@ -258,19 +258,7 @@
     </li>
     
     <li class="article-tag-list-item">
-        <a class="color4">git</a>
-    </li>
-    
-    <li class="article-tag-list-item">
         <a class="color5">hexo</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color2">github</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color4">web</a>
     </li>
     
     <li class="article-tag-list-item">
@@ -282,6 +270,18 @@
     </li>
     
     <li class="article-tag-list-item">
+        <a class="color2">github</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">web</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">管理</a>
+    </li>
+    
+    <li class="article-tag-list-item">
         <a class="color1">msyql</a>
     </li>
     
@@ -290,7 +290,7 @@
     </li>
     
     <li class="article-tag-list-item">
-        <a class="color3">管理</a>
+        <a class="color4">git</a>
     </li>
     
     <div class="clearfix"></div>
@@ -445,7 +445,7 @@
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2020-04-10 10:40:41'>2016-05-22 21:42</time>
+        创建时间:<time class="date" title='更新时间: 2020-04-15 16:14:30'>2016-05-22 21:42</time>
         
     </div>
     <div class="article-meta">
@@ -514,7 +514,7 @@ paths:
 &#39;E:\\node\\node\\node_modules&#39;,
 &#39;E:\\node\\node_modules&#39;,
 &#39;E:\\node_modules&#39; ] }
-</code></pre><p>这是app.js文件输出的module对象, 相信对大家.应该都能猜到里面各个参数的意思.但对新手来说. exports 确是个深深的坑.<br>我们来修改下app.js</p>
+</code></pre><p>这是app.js文件输出的module对象, 相信对大家.应该都能猜到里面各个参数的意思.但对新手来说. exports 却是个深深的坑.<br>我们来修改下app.js</p>
 <pre><code>var foo = require(&quot;./foo&quot;);
 </code></pre><p>新建foo.js</p>
 <pre><code>module.exports.hello = &#39;bbb&#39;
@@ -570,7 +570,7 @@ exports.xxx= function  (argument) {
     
     <p><span class="copy-title">本文作者:</span><a  title="zhu8fei">zhu8fei</a></p>
     <p><span class="copy-title">发布时间:</span>2016-05-22, 21:42:14</p>
-    <p><span class="copy-title">最后更新:</span>2020-04-10, 10:40:41</p>
+    <p><span class="copy-title">最后更新:</span>2020-04-15, 16:14:30</p>
     <span class="copy-title">原始链接:</span><a class="post-url" href="/2016/05/22/nodejs-export-module-export.html" title="nodejs中exports和module.exports">http://blog.zhu8fei.com/2016/05/22/nodejs-export-module-export.html</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
@@ -662,7 +662,7 @@ exports.xxx= function  (argument) {
     /*作者、标签的自动补全*/
     $(function () {
         $('.search').AutoComplete({
-            'data': ['#Book','#git','#hexo','#github','#web','#网站建设','#node','#msyql','#linux','#管理',],
+            'data': ['#Book','#hexo','#网站建设','#node','#github','#web','#管理','#msyql','#linux','#git',],
             'itemHeight': 20,
             'width': 418
         }).AutoComplete('show');
