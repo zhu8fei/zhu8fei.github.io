@@ -2,9 +2,9 @@
 <html>
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
-  <title>关于zhu8fei | zhu8fei</title>
-  <meta name="keywords" content>
-  <meta name="description" content="关于zhu8fei | zhu8fei">
+  <title>JAVA中的各种Object | zhu8fei</title>
+  <meta name="keywords" content=" java ">
+  <meta name="description" content="JAVA中的各种Object | zhu8fei">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="声明本博客作者非常热爱软件行业, 从事软件开发已超10年, 技术水平自认中等. 博客中, 但凡有”侮辱”软件行业的用词, 基本属于自嘲. 如果有影响读者心情情况发生, 请酌情辣眼睛, 实在看不下去的请绕道, 要是真到了毁灭心灵的层次, 请反馈作者, 我会第一时间修改或删除. 关于本博客: 本来想写成技术博客, 但水平实在有限, 技术文档写的惨不忍睹. 于是换种方式, 分享一下自己乱七八糟的过往经验">
 <meta property="og:type" content="website">
@@ -439,19 +439,31 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
+        <article id="post-various-object" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">关于zhu8fei</h1>
+        <h1 class="article-title">JAVA中的各种Object</h1>
     
     <div class="article-meta">
         
         
         
+        <span class="book">
+            
+                <a  data-rel="java">java</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a class="color5">java</a>
+            
+        </span>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2020-04-14 16:19:13'>2016-05-22 21:32</time>
+        创建时间:<time class="date" title='更新时间: 2020-04-21 11:54:12'>2020-04-21 10:57</time>
         
     </div>
     <div class="article-meta">
@@ -484,7 +496,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#声明"><span class="toc-text">声明</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#关于作者"><span class="toc-text">关于作者</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#奇葩的经历"><span class="toc-text">奇葩的经历</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#访问量"><span class="toc-text">访问量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#博客平台"><span class="toc-text">博客平台</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#DO"><span class="toc-text">DO</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#DTO"><span class="toc-text">DTO</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BO"><span class="toc-text">BO</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#AO"><span class="toc-text">AO</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#VO"><span class="toc-text">VO</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#一些需要注意的点"><span class="toc-text">一些需要注意的点</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -500,32 +512,43 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h2><p>本博客作者非常热爱软件行业, 从事软件开发已超10年, 技术水平自认中等. 博客中, 但凡有”侮辱”软件行业的用词, 基本属于自嘲. 如果有影响读者心情情况发生, 请酌情辣眼睛, 实在看不下去的请绕道, 要是真到了毁灭心灵的层次, 请反馈作者, 我会第一时间修改或删除.</p>
-<p>关于本博客:</p>
-<p>本来想写成技术博客, 但水平实在有限, 技术文档写的惨不忍睹. 于是换种方式, 分享一下自己乱七八糟的过往经验. </p>
-<h2 id="关于作者"><a href="#关于作者" class="headerlink" title="关于作者"></a>关于作者</h2><p>一把年纪, 文盲, 屌丝码农, 又懒, 又蠢萌, 折腾系, 辍学党, 非典型精分. 对化肥的了解. 远远高于对计算机的了解.</p>
-<h3 id="奇葩的经历"><a href="#奇葩的经历" class="headerlink" title="奇葩的经历"></a>奇葩的经历</h3><ul>
-<li>2004-2007 大学本科成功辍学.</li>
-<li>2007-2008 adobe 平面设计师.</li>
-<li>2008-2008 培训JAVA 三个月.</li>
-<li>2008-2010 流窜上海, 混入软件行业, 预付卡发行公司.</li>
-<li>2010-2015 继续混迹在预付卡和支付行业.</li>
-<li>2015-2016 成功混入电商行业.</li>
-<li>2017-…  来到郑州, 进入广告行业.</li>
+        <p>首先引用一下阿里开发手册中的定义.</p>
+<ul>
+<li>DO（ Data Object）：与数据库表结构一一对应，通过DAO层向上传输数据源对象。</li>
+<li>DTO（ Data Transfer Object）：数据传输对象，Service或Manager向外传输的对象。</li>
+<li>BO（ Business Object）：业务对象。 由Service层输出的封装业务逻辑的对象。</li>
+<li>AO（ Application Object）：应用对象。 在Web层与Service层之间抽象的复用对象模型，极为贴近展示层，复用度不高。</li>
+<li>VO（ View Object）：显示层对象，通常是Web向模板渲染引擎层传输的对象。</li>
+<li>POJO（ Plain Ordinary Java Object）：在本手册中， POJO专指只有setter/getter/toString的简单类，包括DO/DTO/BO/VO等。</li>
 </ul>
-<p>本职是开发,但应公司要求 , 却干过:</p>
-<pre><code>开发,测试,项目经理.
-售前,产品,技术架构.
-运维,运营,网络黑客.
-美工,前端,帮点外卖.
-</code></pre><h2 id="访问量"><a href="#访问量" class="headerlink" title="访问量"></a>访问量</h2><p>到目前为止已经写了<code class="article_number"></code>篇文章。</p>
-<p>本站访问人数：<code class="site_uv"></code>人次 ， 访问量：<code class="site_pv"></code>次</p>
-<h2 id="博客平台"><a href="#博客平台" class="headerlink" title="博客平台"></a>博客平台</h2><p>这个博客通过 <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> 生成，部署在 <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a>，主题 <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank" rel="noopener">3-hexo</a> 已经在github上开源</p>
+<p>用法用量请各位看官老爷酌情食用.<a id="more"></a> POJO, 不解释.   所有的这些Object里面. 原则上都不允许有业务代码. </p>
+<h3 id="DO"><a href="#DO" class="headerlink" title="DO"></a>DO</h3><p>DO是绝对不允许添加任何非 set/get 以外的代码的(包括修改set get).  可以有自定义的toString</p>
+<h3 id="DTO"><a href="#DTO" class="headerlink" title="DTO"></a>DTO</h3><p>通常用于系统间传输, 必需能够序列化, 可能需要考虑异构语言系统的兼容问题.</p>
+<h3 id="BO"><a href="#BO" class="headerlink" title="BO"></a>BO</h3><p>业务系统内部使用, 用于复杂逻辑数据处理, 跨业务数据传递 , 原始数据二次加工等 . 注意, 原文可能有问题. 此对象应该为封装业务逻辑的数据对象. </p>
+<h3 id="AO"><a href="#AO" class="headerlink" title="AO"></a>AO</h3><p>业务和架构过度复杂的产物, 很实用, 但不常见. </p>
+<h3 id="VO"><a href="#VO" class="headerlink" title="VO"></a>VO</h3><p>常用于对前端的api接口响应中. 是可以暴露给最终用户的数据. </p>
+<h3 id="一些需要注意的点"><a href="#一些需要注意的点" class="headerlink" title="一些需要注意的点"></a>一些需要注意的点</h3><p>DO 和 DTO 会参与dao, rmi, json, xml 等 需要序列化操作. 额外代码 可能会导致 序列化失败, 严重的可能导致一些系统关键对象的销毁.  </p>
+<p>DO 和 BO 通常会包含大量不能对外暴露的属性数据. </p>
+<p>DTO 和 AO 与VO 数据格式可能不一致. 即使一致通常也需要加工后转成VO才可以发送给最终用户.(这句话可能有争议, 但一般指没有严格代码要求的地方)</p>
+<p>VO 和 DTO 可以对外部返回. 可以用于接收外部系统数据, 通常认为每个字段所接收的数据.都是具有风险的. 至少需要常规判空.严格安全环境需要安全检查.</p>
+<p>AO BO 通常为单个子项目内部使用. DO 只存在于数据层.</p>
 
       
     </div>
 </article>
 
+
+<div class="article_copyright">
+    <p><span class="copy-title">文章标题:</span>JAVA中的各种Object</p>
+    
+    <p><span class="copy-title">本文作者:</span><a  title="zhu8fei">zhu8fei</a></p>
+    <p><span class="copy-title">发布时间:</span>2020-04-21, 10:57:36</p>
+    <p><span class="copy-title">最后更新:</span>2020-04-21, 11:54:12</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/04/21/various-object.html" title="JAVA中的各种Object">http://blog.zhu8fei.com/2020/04/21/various-object.html</a>
+    <p>
+        <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+    </p>
+</div>
 
 
 <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 zhu8fei@163.com </span>
@@ -548,7 +571,7 @@
             repo: 'zhu8fei.github.io',
             owner: 'zhu8fei',
             admin: ['zhu8fei'],
-            id: md5('关于zhu8fei'),
+            id: md5('JAVA中的各种Object'),
             distractionFreeMode: 'true',
             language: 'zh-CN',
             perPage: parseInt('10',10)

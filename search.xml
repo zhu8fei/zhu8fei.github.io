@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>JAVA中的各种Object</title>
+      <link href="/2020/04/21/various-object.html"/>
+      <url>/2020/04/21/various-object.html</url>
+      
+        <content type="html"><![CDATA[<p>首先引用一下阿里开发手册中的定义.</p><ul><li>DO（ Data Object）：与数据库表结构一一对应，通过DAO层向上传输数据源对象。</li><li>DTO（ Data Transfer Object）：数据传输对象，Service或Manager向外传输的对象。</li><li>BO（ Business Object）：业务对象。 由Service层输出的封装业务逻辑的对象。</li><li>AO（ Application Object）：应用对象。 在Web层与Service层之间抽象的复用对象模型，极为贴近展示层，复用度不高。</li><li>VO（ View Object）：显示层对象，通常是Web向模板渲染引擎层传输的对象。</li><li>POJO（ Plain Ordinary Java Object）：在本手册中， POJO专指只有setter/getter/toString的简单类，包括DO/DTO/BO/VO等。</li></ul><p>用法用量请各位看官老爷酌情食用.<a id="more"></a> POJO, 不解释.   所有的这些Object里面. 原则上都不允许有业务代码. </p><h3 id="DO"><a href="#DO" class="headerlink" title="DO"></a>DO</h3><p>DO是绝对不允许添加任何非 set/get 以外的代码的(包括修改set get).  可以有自定义的toString</p><h3 id="DTO"><a href="#DTO" class="headerlink" title="DTO"></a>DTO</h3><p>通常用于系统间传输, 必需能够序列化, 可能需要考虑异构语言系统的兼容问题.</p><h3 id="BO"><a href="#BO" class="headerlink" title="BO"></a>BO</h3><p>业务系统内部使用, 用于复杂逻辑数据处理, 跨业务数据传递 , 原始数据二次加工等 . 注意, 原文可能有问题. 此对象应该为封装业务逻辑的数据对象. </p><h3 id="AO"><a href="#AO" class="headerlink" title="AO"></a>AO</h3><p>业务和架构过度复杂的产物, 很实用, 但不常见. </p><h3 id="VO"><a href="#VO" class="headerlink" title="VO"></a>VO</h3><p>常用于对前端的api接口响应中. 是可以暴露给最终用户的数据. </p><h3 id="一些需要注意的点"><a href="#一些需要注意的点" class="headerlink" title="一些需要注意的点"></a>一些需要注意的点</h3><p>DO 和 DTO 会参与dao, rmi, json, xml 等 需要序列化操作. 额外代码 可能会导致 序列化失败, 严重的可能导致一些系统关键对象的销毁.  </p><p>DO 和 BO 通常会包含大量不能对外暴露的属性数据. </p><p>DTO 和 AO 与VO 数据格式可能不一致. 即使一致通常也需要加工后转成VO才可以发送给最终用户.(这句话可能有争议, 但一般指没有严格代码要求的地方)</p><p>VO 和 DTO 可以对外部返回. 可以用于接收外部系统数据, 通常认为每个字段所接收的数据.都是具有风险的. 至少需要常规判空.严格安全环境需要安全检查.</p><p>AO BO 通常为单个子项目内部使用. DO 只存在于数据层.</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>陪我干了这碗毒鸡汤</title>
       <link href="/2020/04/14/Accompany-me-to-listen-anti-motivational-quotes.html"/>
       <url>/2020/04/14/Accompany-me-to-listen-anti-motivational-quotes.html</url>
