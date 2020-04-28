@@ -155,22 +155,7 @@
     
         
             
-            <li><div data-rel="javascript"><i class="fold iconfont icon-right"></i>javascript</div>
-                
-                    <ul class="sub hide">
-                        
-                        <li><div data-rel="node"><i class="fold iconfont icon-right"></i>node</div>
-                            
-                                <ul class="sub hide">
-                                    
-                                    <li><div data-rel="hexo">hexo</div>
-                                    </li>
-                                    
-                                </ul>
-                            
-                        </li>
-                            
-                    </ul>
+            <li><div data-rel="scm">scm</div>
                 
             </li>
             
@@ -202,13 +187,28 @@
     
         
             
-            <li><div data-rel="scm">scm</div>
-                
-            </li>
-            
         
     
         
+            
+            <li><div data-rel="javascript"><i class="fold iconfont icon-right"></i>javascript</div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="node"><i class="fold iconfont icon-right"></i>node</div>
+                            
+                                <ul class="sub hide">
+                                    
+                                    <li><div data-rel="hexo">hexo</div>
+                                    </li>
+                                    
+                                </ul>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
             
         
     
@@ -270,15 +270,11 @@
     </li>
     
     <li class="article-tag-list-item">
+        <a class="color4">git</a>
+    </li>
+    
+    <li class="article-tag-list-item">
         <a class="color5">hexo</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color5">网站建设</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color5">node</a>
     </li>
     
     <li class="article-tag-list-item">
@@ -298,7 +294,11 @@
     </li>
     
     <li class="article-tag-list-item">
-        <a class="color4">git</a>
+        <a class="color5">网站建设</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">node</a>
     </li>
     
     <li class="article-tag-list-item">
@@ -647,7 +647,7 @@
     /*作者、标签的自动补全*/
     $(function () {
         $('.search').AutoComplete({
-            'data': ['#Book','#java','#hexo','#网站建设','#node','#github','#web','#msyql','#linux','#git','#管理',],
+            'data': ['#Book','#java','#git','#hexo','#github','#web','#msyql','#linux','#网站建设','#node','#管理',],
             'itemHeight': 20,
             'width': 418
         }).AutoComplete('show');
