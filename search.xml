@@ -4,6 +4,288 @@
   
     
     <entry>
+      <title>redis备忘</title>
+      <link href="/2020/07/15/Recast-redis.html"/>
+      <url>/2020/07/15/Recast-redis.html</url>
+      
+        <content type="html"><![CDATA[<p>关于脑裂:</p><pre><code>min-replicas-to-write 3min-replicas-max-lag 10</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数据库 </category>
+          
+          <category> redis </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> recast </tag>
+            
+            <tag> redis </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>zookeeper备忘</title>
+      <link href="/2020/07/15/Recast-zookeeper.html"/>
+      <url>/2020/07/15/Recast-zookeeper.html</url>
+      
+        <content type="html"><![CDATA[<p>关于脑裂</p><p>发生选举.同时导致服务短时间不可用.  选举机制为大于半数. 所以2n+1是比较合理的部署方式 .</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数据库 </category>
+          
+          <category> redis </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> recast </tag>
+            
+            <tag> zookeeper </tag>
+            
+            <tag> 微服务 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>JAVA环境变量</title>
+      <link href="/2020/07/15/basics-system-environment-variable.html"/>
+      <url>/2020/07/15/basics-system-environment-variable.html</url>
+      
+        <content type="html"><![CDATA[<p>先吐个槽.搜了一堆文档.没有一个写的简单易懂的.来看这帖子的.肯定是新手啊.你写那么晦涩干什么玩意. </p><h2 id="环境变量究竟是个什么"><a href="#环境变量究竟是个什么" class="headerlink" title="环境变量究竟是个什么"></a>环境变量究竟是个什么</h2><p>先看全称系统环境变量.  拆开来说 系统: 指操作系统 .  环境: 指当前程序的运行环境. 变量: 字面意思. (如果变量是什么都不懂的话. 请找本书看.或者继续百度吧)</p><p>如何理解? 操作系统也是一个程序. 它可以给操作系统中运行的其它程序提供变量. 这类变量又分为两类.  </p><a id="more"></a><ul><li><p>系统保留    例如PATH</p><p>命令行里面执行一个<code>cd d:/jdk</code> 目录就跳到这个位置了.那系统执行的这个cd命令是怎么找到的. 就是从这个PATH变量中配置的所有目录,文件中查找. </p></li><li><p>开发者共识的.   例如 JAVA_HOME </p><p>JAVA_HOME 本质上.没有意义. 是使用JDK的开发给定的一个共识说. 我们要到这个目录去找JDK的安装目录.</p></li></ul><p>本质上. windows是Bat脚本. 而xnix( linux mac unix 都是这类)是shell</p><h2 id="如何使用环境变量"><a href="#如何使用环境变量" class="headerlink" title="如何使用环境变量"></a>如何使用环境变量</h2><ul><li><p>windows (本质来说.是DOS)</p><p>脚本也好. 环境变量中也好.  都是 <code>%&lt;变量名&gt;%</code> 使用set命令加载或者直接在我的电脑属性图形方式配置.</p></li><li><p>xnix</p><p>它们的情况和windows不同. 使用的是 <code>$&lt;变量名&gt;</code>   而且是使用source命令加载配置. 或者export直接加载.</p></li></ul><h2 id="JDK怎么配置"><a href="#JDK怎么配置" class="headerlink" title="JDK怎么配置"></a>JDK怎么配置</h2><ul><li><p>JAVA_HOME=JDK的安装目录</p></li><li><p>CLASSPATH=依赖的文件或目录( JDK8?或更早的版本开始.配置不配置这个参数没有意义了.  )</p></li><li><p>PATH 包含(注意不能覆盖原有的PATH内容 . 会导致各种问题)</p><p>windows: <code>%PATH%;%JAVA_HOME%\bin</code>   (间隔符号是分号)</p><p>xnux: <code>$PATH:$JAVA_HOME\bin</code>  (间隔符号是冒号)</p></li></ul><h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><ol><li>windows 可以执行java但不能执行javac     jdk8(?或更早版本)安装后同时会安装有jre.   jre会自行修改注册表.导致可以直接执行java命令</li><li>安装且配置成功后. 是否需要重启?  windows配置后直接生效.cmd中不生效可以关闭再开.  xnux下使用source命令后生效.  结论不需要重启操作系统 .</li><li>使用echo命令 输出当前变量内容.确定具体错误在哪. 例: windows <code>echo %JAVA_HOME%</code> xnix <code>echo $JAVA_HOME</code> </li><li>windows不区分大小写.linux区分.</li><li>各种中文标点符号.(emmm 使用echo可能很清楚看出来  如:　1. ％ %   2. ：:  3.；; 等等  这区别还是很清楚的吧, 实在不行copy到文本编辑工具里面看)</li><li>脑袋不太够用了(其实是懒得想了). 以后再补充 </li></ol><p>## </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 基础 </category>
+          
+          <category> 操作系统 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> book </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>基础知识-目录</title>
+      <link href="/2020/07/15/basics-menu.html"/>
+      <url>/2020/07/15/basics-menu.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="一般内容"><a href="#一般内容" class="headerlink" title="一般内容"></a>一般内容</h2><p><a href="/2020/07/15/basics-system-environment-variable.html">环境变量</a></p><h2 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h2><h2 id="JUnit"><a href="#JUnit" class="headerlink" title="JUnit"></a>JUnit</h2><h2 id="线程"><a href="#线程" class="headerlink" title="线程"></a>线程</h2><h2 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h2><h2 id="安全"><a href="#安全" class="headerlink" title="安全"></a>安全</h2><h2 id="IO"><a href="#IO" class="headerlink" title="IO"></a>IO</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> 基础 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> book </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>回炉重铸-目录</title>
+      <link href="/2020/07/15/Recast-menu.html"/>
+      <url>/2020/07/15/Recast-menu.html</url>
+      
+        <content type="html"><![CDATA[<p>知识点太多. 还记不住. 这要我怎么弄啊.</p><p><a href="/2020/07/15/Recast-redis.html">redis备忘</a></p><p><a href="/2020/07/15/Recast-zookeeper.html">zookeeper备忘</a></p><p>MQTT &amp; MQ</p><p>分布式事务</p><p>spring</p><p>设计模式</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> java </tag>
+            
+            <tag> recast </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>进击的菜鸟-喋血购物车</title>
+      <link href="/2020/07/13/Attack-on-novice-4.html"/>
+      <url>/2020/07/13/Attack-on-novice-4.html</url>
+      
+        <content type="html"><![CDATA[<p>写到这个帖子的时候.我是笑着的.这可能是个行业笑话.但确实是非常苦涩.新手朋友想的是我简历都写的这么好了.为什么面试官还是觉得我不入流. 而面试官又觉得这就是个没做过项目的小菜鸟.引申来说本质上.购物车只是个代词. 诸如进销存. 车辆管理. 设置是OA系统. 都面临同样问题. 你是否真正了解你自己简历上面写的业务需求. 真的可能只是几句话就暴露了. 我们先来了解一下. 培训机构认为很简单的购物车. 是不是真的那么简单.</p><h2 id="到底能不能在简历上写购物车"><a href="#到底能不能在简历上写购物车" class="headerlink" title="到底能不能在简历上写购物车"></a>到底能不能在简历上写购物车</h2><p>先说结论. 肯定可以写.不然真在大电商里面写购物车的兄弟们. 还不跳槽了?那为什么购物车成了行业笑话:</p><ol><li>90%(鬼知道哪来的数据别太在意)的培训机构.会怂恿学员在简历上写购物车.而且往往背后是带着学员学习了servlet并知道了什么是session. 良心培训机构.可能还会顺手教你学一下redis是啥.</li><li>从来没有人标明说这项目经验是来自培训或者是自己的小项目.这只会让面试官和HR觉得你个人诚信有问题.</li><li>直接暴露你的层次. 新手和有相关从业经验本质上的不同.</li><li>另外如果你写的是完整商城系统.  恭喜你. 面试官笑笑不想和你说话.</li></ol><a id="more"></a><h2 id="了购物车"><a href="#了购物车" class="headerlink" title="了购物车"></a>了购物车</h2><p>失败的建立. 这个例子简直是太经典.以天猫和京东为例. 典型的购物车.至少会包含下面这些常见的功能</p><ol><li>商品列表 </li><li>登录和未登录添加购物车.</li><li>门店分组.商品会按门店分组. </li><li>营销系统. 领取优惠券. 满减. 积分等其它优惠.</li><li>价格提示. 正常价格和是否降价等 (隐含内容&gt; 商品快照)</li><li>预结算. 选中多个商品计算大致价格.</li><li>库存信息.一般提示库存不足的信息.</li></ol><ul><li>可能会忽略的细节</li></ul><ol><li>商品列表中基本包含商品状态. 类目信息(有些同学居然都不知道类目是什么).各类服务标签(7天包换这种)</li><li>一定会有登录和未登录状态. 但未登录时. 加入购物车和登录后加入购物车. 有非常明显的不一致.培训机构这时一定会告诉你.这是通过本地cookie来解决问题的.但实际上.这牵扯的东西太多. 有兴趣的同学可以了解下用户票据.类似oauth2.0的登录票据一样.客户端的东西是伴随风险的. 所以更多时候. 购物车内的数据是依赖服务器缓存的.还在使用本地cookie的恐怕不多了.</li><li>门店可能会关联im系统.各家门店自己的营销信息等 (好像和营销系统有些重复是不是).</li><li>营销系统按以前的同事说法是. 规则多的要死. 经常有互斥.或者重复扣减之类的问题. 购物车这边通常只是显示.忽悠用户拼单.</li><li>价格系统最神奇.不同的客户端. 不同的地区. 不同的时段.  价格都可能不一致.</li><li>可能计算优惠.运费等数据不同平台玩法不一样. 只要能说通就好.</li><li>库存同样比较复杂.</li></ol><p>这部分内容. 有杠的嫌疑. 不要细纠.  简单来说.如果做过电商就是没接触这些系统. 里面的业务多少也会了解一些.  那么问题来了. 当面试官.问你这些东西的时候 . 你是不是能说清楚呢?其实还有很多另类的商城 会有各种不同的需求 . 电商网站的架构. 比较正常的成长型应该是从一个web应用逐渐扩大变成各种微服务组合出来的.按一个中等规模的电商平台来说. 上面这些数据应该来自分别不同的子系统. 商城前台(注意不是前端)兄弟整合这些数据并不轻松. 还要考虑各子系统的响应时间.数据并发量. 缓存使用量等.</p><h2 id="技术问题"><a href="#技术问题" class="headerlink" title="技术问题"></a>技术问题</h2><p>只挖坑不管埋有兴趣自己百度去. 这边只写一些用来祸害新手开发的问题.</p><ol><li>项目规模. 开发人数(判断项目是否有分布式. 团队开发能力等.大致了解项目复杂程度)</li><li>session和本地cookie能用吗?  (引出sso问题)</li><li>Redis如何使用.(深入的可能引发诸如脑裂.一致性等问题)</li><li>同步还是异步访问子系统.(引发分布式系统相关问题.常见分布式事务处理)</li><li>线程相关问题.</li><li>可能会问安全相关(JS注入. SQL注入等 ).</li><li>服务治理类工具使用问题.</li><li>是否使用MQ.</li><li>数据库表设计.(硬要说. 随便弄个十几二十几张没得问题)</li></ol><p>例子举不过来. 如果问相关的业务系统问题 那就更多了.玩具和项目的区别. 培训或大学大作业这些. 难听点说.就是玩具. 它们存在的目的更多是为了让你了解开发流程.熟悉怎么写代码.  真正的项目. 要有完整的业务流程能够自圆其说的. 明确的说出自己做的项目并不是商业项目可能会降低对方的心理预期.但不会给你打太多负分. </p><h2 id="专有名词"><a href="#专有名词" class="headerlink" title="专有名词"></a>专有名词</h2><p>同样只挖坑不管埋   </p><ul><li>类目</li><li>品类</li><li>品牌</li><li>Sku/spu</li></ul><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>写项目经历. 并不容易. 在简历上标注这是玩具项目.是自杀行为. 这样HR这关我们过不了. 但明确告诉面试官.这是玩具项目并不一定是坏事. 回到开头说的. 行业笑话的其实本质是面试官有戏可以看了. 新人基础打的牢.不怕找不到好工作. </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 职业生涯 </category>
+          
+          <category> 进击的菜鸟 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Book </tag>
+            
+            <tag> 进击的菜鸟 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>进击的菜鸟-目录</title>
+      <link href="/2020/07/13/Attack-on-novice-menu.html"/>
+      <url>/2020/07/13/Attack-on-novice-menu.html</url>
+      
+        <content type="html"><![CDATA[<p><a href="/2020/06/23/Attack-on-novice-0.html">进击的菜鸟0-简历</a></p><p><a href="/2020/04/13/Attack-on-novice.html">进击的菜鸟1-面试</a></p><p><a href="/2020/04/13/Attack-on-novice-2.html">进击的菜鸟2-规划</a></p><p><a href="/2020/06/23/Attack-on-novice-3.html">进击的菜鸟3-工作经验(还没写)</a></p><p><a href="/2020/07/13/Attack-on-novice-4.html">进击的菜鸟4-喋血购物车</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 职业生涯 </category>
+          
+          <category> 进击的菜鸟 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Book </tag>
+            
+            <tag> 进击的菜鸟 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>进击的菜鸟3-工作经验</title>
+      <link href="/2020/06/23/Attack-on-novice-3.html"/>
+      <url>/2020/06/23/Attack-on-novice-3.html</url>
+      
+        <content type="html"><![CDATA[<p>这</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 职业生涯 </category>
+          
+          <category> 进击的菜鸟 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Book </tag>
+            
+            <tag> 进击的菜鸟 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>进击的菜鸟0-简历</title>
+      <link href="/2020/06/23/Attack-on-novice-0.html"/>
+      <url>/2020/06/23/Attack-on-novice-0.html</url>
+      
+        <content type="html"><![CDATA[<p>​    培训机构里面最常见的一堂课. 就是怎么写简历. 怎么让自己的简历更好看. 更容易得到企业的亲睐. 讲道理.简历确实需要认真的好好写. 原因很简单.一个简历这么重要的东西都不用心去写的人. 工作能力强又能强到哪去(特么的博主写这话的时候. 看了看自己的简历. 心想自己哪来的勇气说这话的).</p><h2 id="尴尬的矛盾"><a href="#尴尬的矛盾" class="headerlink" title="尴尬的矛盾"></a>尴尬的矛盾</h2><p>   其实我真不想说这个事. 但又很现实. 大部分IT企业和猎头. 并不清楚程序员需要哪些”硬条件”.往往很多优秀的简历就被他们给pass了. 原因是写的太简单了. 没有任何的”润色”. 除非走内推.谁会拿着你的简历看上超过30秒. 格式不清晰的.内容太复杂的.不相关内容太多的.基本没等看到关键信息. 就被HR扔到垃圾桶了.好不容易有”写的好”的简历了.然而到了面试官这边.又会变成 另外一种情况.  这小弟脑残吧? 怎么写这么啰嗦.</p><a id="more"></a><ul><li>HR倾向</li></ul><ol><li>简历格式乱. 直接pass. 他们往往一天要过上百份简历.哪有时间和心思去看如同解迷一样的简历.</li><li>个人信息. 常规操作.尽量详细. 推荐各种招聘网站抄一份.</li><li>与职位JD相符的简历. 技能列表是必须要有的. 谁知道spring mybatis mysql是啥.你写了就OK. 没写. 面试官那边肯定不要. 所以列表里面多出来的精通各种java框架和精通各种数据库. 都是没用的.</li><li>工作经验和项目经验. 连项目干什么的都写不清楚.肯定是水货啊. 建议是工作经历和项目经历分开写.但顺序要对上. 最好是时间倒序. 不要有时间真空期.不然HR会认为你能力有问题.</li><li>学历.各种培训. 各种辅助技能(比如外语). 各种奖项(一定要职业相关性.比如计算机.数学竞赛等). 这些对HR来说. 就是加分项.但尽量写到简历的尾部.</li></ol><ul><li>面试官倾向</li></ul><ol><li>格式什么的. 别太乱的都能看.</li><li>个人信息. 这小伙挺帅.一眼跳过.</li><li>技能列表? 核心技术必须会. 其它的都好学.</li><li>工作经验不相关的? 还得现学. 而且还不一定学的会.一个字. 烦</li><li>其它东西不重要.</li></ol><p>​    结论. 最容易出坑的点. 技术栈和项目经历. 技术栈写不全HR这关都过不了. 适度的描述自己的工作过程. 让HR和面试官同时加分.</p><h2 id="错误姿势"><a href="#错误姿势" class="headerlink" title="错误姿势"></a>错误姿势</h2><p>简单来说. 简历就是要保证反应你的真实情况. 润色过多. 顶天就是浪费面试官和你的时间而已.</p><ol><li>网上搜几个名词.不加思考也不管会不会.就往自己的简历上写.  甚至直接套用. </li><li>各种精通. 一般写熟悉即可. 不然容易遭到面试官细扣. 扣到你没脾气. 特别是新手朋友更容易遭到特殊待遇. 不会的东西. 一定一定不要出现在简历上. 会的东西.尽量写全.</li><li>大段大段的写项目描述. 尽量只详细描述最近的两个到三个项目. 过早的项目不需要很详细. 一般只需要写出. 项目类型. 工作内容.即可. 如果是有跨行业项目时.可以考虑写详细. (举例: 我从预付卡行业转到电商行业后. 我会把之前某个预付卡的业务写的比较清楚)</li><li>无关奖项(诸如小学三好学生). 陈独秀同学.请你坐下.</li></ol><h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><p>所有的小瑕疵.都可能导致HR脑袋一热. 把你简历扔一边.</p><ol><li>错别字. 一定要仔细检查简历. </li><li>格式. 不需要漂亮 . 但一定保持段落整齐和一致性</li><li>可以不在简历里面放照片.但千万别用美颜. 要用也是证件照规格(别问我为什么).</li><li>尽量不要海投. 即使真的想海投简历. 先查看要投的公司和自己的工作经历是不是匹配. 至少技术栈不能相差太多.  而不是无脑投.</li><li>有朋友问我.新手的简历往往很简单.这样怎么能得到企业的亲睐. 我想反过来想这个问题. 一家都不知道自己想要什么人的公司. 去了又能怎么样? 新手的工资招全能的开发?</li><li>本帖子灵感: 先给自己挖个坑. 常见的购物车和进销存能不能写?(哪天不懒 一定把这篇给补咯)</li></ol><h2 id="大致格式"><a href="#大致格式" class="headerlink" title="大致格式"></a>大致格式</h2><ol><li>个人信息</li><li>技术栈</li><li>工作经历</li><li>项目经历</li><li>学历</li><li>其它技能.相关的培训奖项等.</li><li>自我评价</li><li>篇幅. 尽量保持2页左右. 如果工作很多年. 尽量控制在4页以内.</li></ol><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>简历整洁大方. 真才实学才会提高面试成功率. </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 职业生涯 </category>
+          
+          <category> 进击的菜鸟 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Book </tag>
+            
+            <tag> 进击的菜鸟 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>unity mqtt 使用</title>
+      <link href="/2020/06/06/unity-mqtt.html"/>
+      <url>/2020/06/06/unity-mqtt.html</url>
+      
+        <content type="html"><![CDATA[<p>主要是一个插件的安装.<a href="https://github.com/GlitchEnzo/NuGetForUnity/releases" target="_blank" rel="noopener">NuGetForUnity</a> 这插件完全不了解中. </p><p>目前来看. 支持的类库特别多. </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> unity </category>
+          
+          <category> CSharp </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> unity </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>JAVA中的各种Object</title>
       <link href="/2020/04/21/various-object.html"/>
       <url>/2020/04/21/various-object.html</url>
@@ -90,12 +372,16 @@
           
           <category> 职业生涯 </category>
           
+          <category> 进击的菜鸟 </category>
+          
       </categories>
       
       
         <tags>
             
             <tag> Book </tag>
+            
+            <tag> 进击的菜鸟 </tag>
             
         </tags>
       
@@ -165,12 +451,16 @@
           
           <category> 职业生涯 </category>
           
+          <category> 进击的菜鸟 </category>
+          
       </categories>
       
       
         <tags>
             
             <tag> Book </tag>
+            
+            <tag> 进击的菜鸟 </tag>
             
         </tags>
       
