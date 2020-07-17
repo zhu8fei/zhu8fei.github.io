@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>使用hexo在github上建站 | zhu8fei</title>
-  <meta name="keywords" content=" hexo , github , web ">
-  <meta name="description" content="使用hexo在github上建站 | zhu8fei">
+  <title>zhu8fei</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="zhu8fei">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="blog.zhu8fei.com">
 <meta property="og:type" content="website">
@@ -640,35 +640,17 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-hexo-github-pages" class="article article-type-post" itemscope itemprop="blogPost">
-    
-        <h1 class="article-title">使用hexo在github上建站</h1>
+        <article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
     
     <div class="article-meta">
         
         
         
-        <span class="book">
-            
-                <a  data-rel="blog">blog</a>
-            
-        </span>
-        
-        
-        <span class="tag">
-            
-            <a class="color5">hexo</a>
-            
-            <a class="color2">github</a>
-            
-            <a class="color4">web</a>
-            
-        </span>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2020-04-09 16:54:34'>2016-05-21 20:26</time>
+        创建时间:<time class="date" title='更新时间: 2020-07-17 10:48:11'>2020-07-17 10:48</time>
         
     </div>
     <div class="article-meta">
@@ -717,34 +699,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>网络上已经有非常多的使用hexo 建立blog的帖子了. 这边这个日志.只是用来备忘的(也许还带着点吐槽).</p>
-<p>首先hexo是基于node, 如果是搞软件开发的兄弟, 推荐顺手把node也学了, 这玩意真心不错.<br>hexo 的官方网站 <a href="https://hexo.io/" target="_blank" rel="noopener" title="hexo">https://hexo.io/</a> 一上来就是安装方法.很容易而且英语也很好懂.不多说了(然后槽点就来了,感谢GFW让我下载”飞”一样的快).</p>
-<a id="more"></a>
-<p>网上说hexo在安装的时候因为判断语言的时候会卡死.node先升级到了最新的版本.同时开了代理.别问我到底哪个操作导致成功的,我没那时间再试一次了.太特么恶心了.</p>
-<p>如果报这个错误. <code>java Error: Deployer not found : github, </code>则需要执行:(再次卡死…)<br><code>npm install hexo-deployer-git --save</code> 同时把_config.yml文件 deploy下面的type改成git  同时,repository 指向你的github对应的仓库上</p>
-<p>域名解析. 在source下新建CNAME文件, 把你需要解析的域名写进去就行了.   比如我的 blog.zhu8fei.com</p>
-<p>总算只剩下 hexo的语法问题了, hexo默认主题landscape使用ejs模板 , 如果会express的话. 编辑起来就非常容易了.</p>
-<p>当前这个主题, 有部分修改. 都是小改动. 使用360CDN镜像 替换了google的资源(WTF GFW).参考这篇<a href="http://dev.duoshuo.com/threads/541d3b2b40b5abcd2e4df0e9" target="_blank" rel="noopener">Hexo使用多说教程</a>添加了评论功能,改起来也是超级容易.</p>
-<p>加评论的程中, 评论怎么也出不来. 玩着玩着报了这个  <code>Cannot read property &#39;compile&#39; of undefined</code> 找了半天问题没搞定. 网上搜了半天 .都说 <code>hexo init</code> init 你妹啊. 幸亏老子一直有push github 直接 init会把.git都干掉就更别说做了这么多的修改了. 最终找到的解决办法 居然是<code>npm install</code>. 这算是hexo的bug吗?不清楚反正这个挺坑.</p>
-<p>最后整体感觉. 时间主要扔在改页面样式上了. 估计后续还会继续改.</p>
-<p>2016/05/24 零点被坑死. <code>Cannot read property &#39;compile&#39; of undefined</code> 这个问题的原因, 是一个倒霉的tab 导致页面整个404了.  真是good work . md文件的头部信息中,注意不要写空tab. 会解析失败的. github果然是非常给力,发现这个问题先是搜了一大堆无关信息. 但最后发现github 仓库里面有深红的颜色 . 感觉不正常就随手改了下试试. </p>
+        <p>blog.zhu8fei.com</p>
 
       
     </div>
 </article>
 
-
-<div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>使用hexo在github上建站</p>
-    
-    <p><span class="copy-title">本文作者:</span><a  title="zhu8fei">zhu8fei</a></p>
-    <p><span class="copy-title">发布时间:</span>2016-05-21, 20:26:06</p>
-    <p><span class="copy-title">最后更新:</span>2020-04-09, 16:54:34</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2016/05/21/hexo-github-pages.html" title="使用hexo在github上建站">http://blog.zhu8fei.com/2016/05/21/hexo-github-pages.html</a>
-    <p>
-        <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
-    </p>
-</div>
 
 
 <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 zhu8fei@163.com </span>
@@ -767,7 +727,7 @@
             repo: 'zhu8fei.github.io',
             owner: 'zhu8fei',
             admin: ['zhu8fei'],
-            id: md5('使用hexo在github上建站'),
+            id: md5(''),
             distractionFreeMode: 'true',
             language: 'zh-CN',
             perPage: parseInt('10',10)
