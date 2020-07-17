@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.zhu8fei.com/2020/07/15/basics-menu.html</loc>
+    
+    <lastmod>2020-07-17T06:50:17.204Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.zhu8fei.com/2020/07/17/uml.html</loc>
     
     <lastmod>2020-07-17T06:23:01.575Z</lastmod>
@@ -23,23 +30,9 @@
   </url>
   
   <url>
-    <loc>http://blog.zhu8fei.com/2020/07/15/basics-menu.html</loc>
-    
-    <lastmod>2020-07-17T02:55:47.883Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://blog.zhu8fei.com/2020/07/17/object-oriented-programing.html</loc>
     
     <lastmod>2020-07-17T02:55:34.096Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.zhu8fei.com/CNAME.html</loc>
-    
-    <lastmod>2020-07-17T02:48:11.911Z</lastmod>
     
   </url>
   
