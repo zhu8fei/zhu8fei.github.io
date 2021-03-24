@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.zhu8fei.com/"/>
-  <updated>2020-07-17T06:23:01.575Z</updated>
+  <updated>2020-07-17T09:01:05.542Z</updated>
   <id>http://blog.zhu8fei.com/</id>
   
   <author>
@@ -17,42 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>uml</title>
-    <link href="http://blog.zhu8fei.com/2020/07/17/uml.html"/>
-    <id>http://blog.zhu8fei.com/2020/07/17/uml.html</id>
-    <published>2020-07-17T02:55:06.000Z</published>
-    <updated>2020-07-17T06:23:01.575Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="类"><a href="#类" class="headerlink" title="类"></a>类</h2><pre class="mermaid">classDiagram class Studernt Studernt : -name:String Studernt : +display () Studernt: -no:long</pre>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;类&quot;&gt;&lt;a href=&quot;#类&quot; class=&quot;headerlink&quot; title=&quot;类&quot;&gt;&lt;/a&gt;类&lt;/h2&gt;&lt;pre class=&quot;mermaid&quot;&gt;classDiagram
- class Studernt
- Studernt : -name:String
- S
-      
-    
-    </summary>
-    
-    
-      <category term="基础" scheme="http://blog.zhu8fei.com/categories/%E5%9F%BA%E7%A1%80/"/>
-    
-      <category term="OOP" scheme="http://blog.zhu8fei.com/categories/%E5%9F%BA%E7%A1%80/OOP/"/>
-    
-    
-      <category term="book" scheme="http://blog.zhu8fei.com/tags/book/"/>
-    
-  </entry>
-  
-  <entry>
     <title>面向对象编程</title>
     <link href="http://blog.zhu8fei.com/2020/07/17/object-oriented-programing.html"/>
     <id>http://blog.zhu8fei.com/2020/07/17/object-oriented-programing.html</id>
     <published>2020-07-17T02:50:13.000Z</published>
-    <updated>2020-07-17T02:55:34.096Z</updated>
+    <updated>2020-07-17T09:01:05.542Z</updated>
     
     <content type="html"><![CDATA[<p>小兄弟小姐妹。快醒醒你没有对象.</p><h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><h2 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h2><ul><li>抽象性</li><li>继承性</li><li></li></ul>]]></content>
     
@@ -200,7 +169,7 @@ min-replicas-max-lag 10&lt;/code&gt;&lt;/pre&gt;
     <link href="http://blog.zhu8fei.com/2020/07/15/Recast-menu.html"/>
     <id>http://blog.zhu8fei.com/2020/07/15/Recast-menu.html</id>
     <published>2020-07-15T08:46:46.000Z</published>
-    <updated>2020-07-15T10:21:23.836Z</updated>
+    <updated>2020-12-11T05:42:29.552Z</updated>
     
     <content type="html"><![CDATA[<p>知识点太多。还记不住。这要我怎么弄啊.</p><p><a href="/2020/07/15/Recast-redis.html">redis 备忘</a></p><p><a href="/2020/07/15/Recast-zookeeper.html">zookeeper 备忘</a></p><p>MQTT &amp; MQ</p><p>分布式事务</p><p>spring</p><p>设计模式</p>]]></content>
     
@@ -226,11 +195,11 @@ min-replicas-max-lag 10&lt;/code&gt;&lt;/pre&gt;
   </entry>
   
   <entry>
-    <title>进击的菜鸟 - 喋血购物车</title>
+    <title>进击的菜鸟 4 - 喋血购物车</title>
     <link href="http://blog.zhu8fei.com/2020/07/13/Attack-on-novice-4.html"/>
     <id>http://blog.zhu8fei.com/2020/07/13/Attack-on-novice-4.html</id>
     <published>2020-07-13T10:23:46.000Z</published>
-    <updated>2020-07-15T09:38:00.007Z</updated>
+    <updated>2020-12-07T10:30:02.404Z</updated>
     
     <content type="html"><![CDATA[<p>写到这个帖子的时候。我是笑着的。这可能是个行业笑话。但确实是非常苦涩。新手朋友想的是我简历都写的这么好了。为什么面试官还是觉得我不入流。而面试官又觉得这就是个没做过项目的小菜鸟。引申来说本质上。购物车只是个代词。诸如进销存。车辆管理。设置是 OA 系统。都面临同样问题。你是否真正了解你自己简历上面写的业务需求。真的可能只是几句话就暴露了。我们先来了解一下。培训机构认为很简单的购物车。是不是真的那么简单.</p><h2 id="到底能不能在简历上写购物车"><a href="#到底能不能在简历上写购物车" class="headerlink" title="到底能不能在简历上写购物车"></a>到底能不能在简历上写购物车</h2><p>先说结论。肯定可以写。不然真在大电商里面写购物车的兄弟们。还不跳槽了？那为什么购物车成了行业笑话:</p><ol><li>90%(鬼知道哪来的数据别太在意) 的培训机构。会怂恿学员在简历上写购物车。而且往往背后是带着学员学习了 servlet 并知道了什么是 session. 良心培训机构。可能还会顺手教你学一下 redis 是啥.</li><li>从来没有人标明说这项目经验是来自培训或者是自己的小项目。这只会让面试官和 HR 觉得你个人诚信有问题.</li><li>直接暴露你的层次。新手和有相关从业经验本质上的不同.</li><li>另外如果你写的是完整商城系统。恭喜你。面试官笑笑不想和你说话.</li></ol><a id="more"></a><h2 id="了购物车"><a href="#了购物车" class="headerlink" title="了购物车"></a>了购物车</h2><p>失败的建立。这个例子简直是太经典。以天猫和京东为例。典型的购物车。至少会包含下面这些常见的功能</p><ol><li>商品列表 </li><li>登录和未登录添加购物车.</li><li>门店分组。商品会按门店分组. </li><li>营销系统。领取优惠券。满减。积分等其它优惠.</li><li>价格提示。正常价格和是否降价等 (隐含内容 &gt; 商品快照)</li><li>预结算。选中多个商品计算大致价格.</li><li>库存信息。一般提示库存不足的信息.</li></ol><ul><li>可能会忽略的细节</li></ul><ol><li>商品列表中基本包含商品状态。类目信息 (有些同学居然都不知道类目是什么). 各类服务标签 (7 天包换这种)</li><li>一定会有登录和未登录状态。但未登录时。加入购物车和登录后加入购物车。有非常明显的不一致。培训机构这时一定会告诉你。这是通过本地 cookie 来解决问题的。但实际上。这牵扯的东西太多。有兴趣的同学可以了解下用户票据。类似 oauth2.0 的登录票据一样。客户端的东西是伴随风险的。所以更多时候。购物车内的数据是依赖服务器缓存的。还在使用本地 cookie 的恐怕不多了.</li><li>门店可能会关联 im 系统。各家门店自己的营销信息等 (好像和营销系统有些重复是不是).</li><li>营销系统按以前的同事说法是。规则多的要死。经常有互斥。或者重复扣减之类的问题。购物车这边通常只是显示。忽悠用户拼单.</li><li>价格系统最神奇。不同的客户端。不同的地区。不同的时段。价格都可能不一致.</li><li>可能计算优惠。运费等数据不同平台玩法不一样。只要能说通就好.</li><li>库存同样比较复杂.</li></ol><p>这部分内容。有杠的嫌疑。不要细纠。简单来说。如果做过电商就是没接触这些系统。里面的业务多少也会了解一些。那么问题来了。当面试官。问你这些东西的时候。你是不是能说清楚呢？其实还有很多另类的商城 会有各种不同的需求。电商网站的架构。比较正常的成长型应该是从一个 web 应用逐渐扩大变成各种微服务组合出来的。按一个中等规模的电商平台来说。上面这些数据应该来自分别不同的子系统。商城前台 (注意不是前端) 兄弟整合这些数据并不轻松。还要考虑各子系统的响应时间。数据并发量。缓存使用量等.</p><h2 id="技术问题"><a href="#技术问题" class="headerlink" title="技术问题"></a>技术问题</h2><p>只挖坑不管埋有兴趣自己百度去。这边只写一些用来祸害新手开发的问题.</p><ol><li>项目规模。开发人数 (判断项目是否有分布式。团队开发能力等。大致了解项目复杂程度)</li><li>session 和本地 cookie 能用吗？(引出 sso 问题)</li><li>Redis 如何使用.(深入的可能引发诸如脑裂。一致性等问题)</li><li>同步还是异步访问子系统.(引发分布式系统相关问题。常见分布式事务处理)</li><li>线程相关问题.</li><li>可能会问安全相关 (JS 注入. SQL 注入等 ).</li><li>服务治理类工具使用问题.</li><li>是否使用 MQ.</li><li>数据库表设计.(硬要说。随便弄个十几二十几张没得问题)</li></ol><p>例子举不过来。如果问相关的业务系统问题 那就更多了。玩具和项目的区别。培训或大学大作业这些。难听点说。就是玩具。它们存在的目的更多是为了让你了解开发流程。熟悉怎么写代码。真正的项目。要有完整的业务流程能够自圆其说的。明确的说出自己做的项目并不是商业项目可能会降低对方的心理预期。但不会给你打太多负分. </p><h2 id="专有名词"><a href="#专有名词" class="headerlink" title="专有名词"></a>专有名词</h2><p>同样只挖坑不管埋   </p><ul><li>类目</li><li>品类</li><li>品牌</li><li>Sku/spu</li></ul><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>写项目经历。并不容易。在简历上标注这是玩具项目。是自杀行为。这样 HR 这关我们过不了。但明确告诉面试官。这是玩具项目并不一定是坏事。回到开头说的。行业笑话的其实本质是面试官有戏可以看了。新人基础打的牢。不怕找不到好工作. </p>]]></content>
     
@@ -523,7 +492,7 @@ min-replicas-max-lag 10&lt;/code&gt;&lt;/pre&gt;
     <link href="http://blog.zhu8fei.com/2020/04/13/High-risk-industry.html"/>
     <id>http://blog.zhu8fei.com/2020/04/13/High-risk-industry.html</id>
     <published>2020-04-13T03:44:11.000Z</published>
-    <updated>2020-04-13T07:51:56.292Z</updated>
+    <updated>2020-10-14T03:22:53.443Z</updated>
     
     <content type="html"><![CDATA[<p>上篇文章里面我们讲过这个大蛋糕有多香。和大多数人不太一样。我进入这个行业。是因为对计算机的热爱。所以我跳过了一半的 “高危”. 比起被鄙视，我们的人生发展才是更关键的。在踩进软件行业这个大坑之前，先看看自己是不是合适这个行业吧. </p><a id="more"></a><h2 id="从被鄙视到自我怀疑"><a href="#从被鄙视到自我怀疑" class="headerlink" title="从被鄙视到自我怀疑"></a>从被鄙视到自我怀疑</h2><p>这还得从被鄙视说起来。在 <a href="/2020/04/10/career-init.html">一切的开始</a> 里面提到，大量从业者是非软件行业甚至是初中文化。这帮人有个什么特点呢。不爱学习。而且这帮人，希望通过短短的 3 个月培训就可以混到高薪行业中。我先不说这有多搞笑，请先想想。这现实吗？就是有那么些个孩子理解不了这个问题. </p><p>那么各位系紧安全带。我要飚车了。参看下图.</p><p><img src="https://i.loli.net/2020/04/13/3LoBk9GCcWrq4tV.jpg" alt="java 技术栈."></p><p>别点了。知道你看不清楚。这内容不是本文重点 (想看原图: <a href="https://www.cnblogs.com/yhood/p/11549966.html" target="_blank" rel="noopener">高级 java 技术栈图</a> ), 只是让你知道光 JAVA 这一门技术点就多到吓死人。这里面每个节点，都会有 N 本高等代数一样厚的教程。我很负责任的告诉你，这个图也绝对不是完整货。而且技术这个东西。每年都会有大量的新技术点诞生，好的技术很可能取代你辛辛苦苦学了几个月甚至几年的东西。一个高级开发，往往会多门语言，还要掌握网络技术，需求分析能力，黑白盒测试能力。甚至有些大牛们还会自己运营.</p><p>不爱学习？还要进软件行业，现在呵呵你不过分吧？</p><h2 id="工作时长"><a href="#工作时长" class="headerlink" title="工作时长"></a>工作时长</h2><p>2019 年闹的很火的 996 这个事 (同样求别喷，我个人并不支持但请看完). 软件客户才不会管你什么后半夜。有问题我就想马上解决。因为我马上就想用。所以半夜被人从家里拉到公司干活并不是多奇怪的事。再加上很多并不适合这个行业的人进入。导致工作效率变低。本来一个人很容易完成的工作。被上下游干扰导致不能如期完成。大量时间用来和同事搞来搞去。让本来简简单单的软件开发变成了办公室骂战。像我一样的爆脾气，不喜欢和人打交道的小伙伴们，要慎重考虑下了.</p><p> 充电不能停，工作外的自我学习时间，几乎会占用你业余时间的全部。就刚刚那个表，多久可以学完？伴随工作时间变长，还有个比较要命的问题，竞争。一个萝卜一个坑，团队里面吃香的。也就那么一两个人.</p><p>每年还有那么多不幸的同志们，倒在工作岗位上。有人觉得他们傻。为什么很辛苦还坚持。因为这个行业的人。都在咬牙坚持。觉得他们傻。只能说明 你并不了解这个行业。你并不真的喜欢这个行业. </p><h2 id="不靠谱的工作"><a href="#不靠谱的工作" class="headerlink" title="不靠谱的工作"></a>不靠谱的工作</h2><p>你将有 80% 的时间。并不是在码代码。理需求，与不同部门的人开会，调试代码，改 bug , code review, 不停的百度或 google 搜索答案。超级多的重复工作.</p><p>而且这个倒霉行业，从诞生之日起，就没有一个完整的考核办法。连很多前沿大神都在自嘲说，软件这个东西。并算不上一个严谨的学科。不能度量不能自圆其说。没有完全正确的答案。从问题产生开始。问题本身都在一直不停的变化中.</p><p>35 岁定律，这是个名字从 30 岁一点点变过来的定律。年纪大了。就干不动。一样加班。一样的工资。可惜体力跟不上了。要么被公司裁掉。要么自己转行.35 咯，你再去干 一个完全不了解的工作能行吗？开发都干不下去的人。还有啥能干好？</p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>让我这个热爱软件行业的人来泼冷水，本来我是拒绝的。但正因为我热爱这个行业。我就更希望不适合这个行业的小伙伴们。能早点发现自己不适合它。有太多可以比来学开发来钱快的道道。回来郑州后，工资少的可怜。有时候我自己也在想要不要开个水果店。如果是不适合的人。越是在这个行业混的久了。你会觉得上面说的东西。早点看到就好了. </p>]]></content>
     
@@ -588,6 +557,34 @@ min-replicas-max-lag 10&lt;/code&gt;&lt;/pre&gt;
     
     
       <category term="Book" scheme="http://blog.zhu8fei.com/tags/Book/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>clean-git</title>
+    <link href="http://blog.zhu8fei.com/2018/01/11/clean-git.html"/>
+    <id>http://blog.zhu8fei.com/2018/01/11/clean-git.html</id>
+    <published>2018-01-11T02:56:40.000Z</published>
+    <updated>2020-04-10T02:40:17.015Z</updated>
+    
+    <content type="html"><![CDATA[<p>作者：Intopass<br>链接：<a href="https://www.zhihu.com/question/29769130/answer/45546231" target="_blank" rel="noopener">https://www.zhihu.com/question/29769130/answer/45546231</a><br>来源：知乎<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p><p>一：常规办法</p><ol><li>删除无用的分支</li></ol><pre><code> git branch -d &lt;branch_name&gt; </code></pre><a id="more"></a><ol start="2"><li><p>删除无用的 tag</p><pre><code>git tag -d &lt;tag_name&gt;</code></pre></li><li><p>清理本地版本库</p></li></ol><pre><code>git gc --prune=now</code></pre><p>二：高级办法<br>注意高级办法会导致 push 冲突，需要强制提交，其他人 pull 也会遇到冲突，建议重新克隆。<br>！！！注意这些操作都很危险，建议找个示例库进行测试，确保自己完全掌握之后再实际操作。</p><ol><li>完全重建版本库</li></ol><pre><code>rm -rf .gitgit initgit add .git cm &quot;first commit&quot;git remote add origin &lt;your_github_repo_url&gt;git push -f -u origin master</code></pre><ol start="2"><li>有选择性的合并历史提交</li></ol><pre><code>git rebase -i &lt;first_commit&gt;</code></pre><p>会进入一个如下所示的文件</p><pre><code>pick ba07c7d add bootstrap theme and format importpick 7d905b8 add newline at file last linepick 037313c fn up_first_char rename to capspick 34e647e add fn of &amp;&amp; use for index.jsppick 0175f03 rename common includepick 7f3f665 update group name &amp;&amp; update config</code></pre><p>将想合并的提交的 pick 改成 s，如</p><pre><code>pick ba07c7d add bootstrap theme and format importpick 7d905b8 add newline at file last linepick 037313c fn up_first_char rename to capss 34e647e add fn of &amp;&amp; use for index.jsppick 0175f03 rename common includepick 7f3f665 update group name &amp;&amp; update config</code></pre><p>这样第四个提交就会合并进入第三个提交。<br>等合并完提交之后再运行</p><pre><code> git push -f git gc --prune=now</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;作者：Intopass&lt;br&gt;链接：&lt;a href=&quot;https://www.zhihu.com/question/29769130/answer/45546231&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.zhihu.com/question/29769130/answer/45546231&lt;/a&gt;&lt;br&gt;来源：知乎&lt;br&gt;著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。&lt;/p&gt;
+&lt;p&gt;一：常规办法&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;删除无用的分支&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt; git branch -d &amp;lt;branch_name&amp;gt; &lt;/code&gt;&lt;/pre&gt;
+    
+    </summary>
+    
+    
+      <category term="scm" scheme="http://blog.zhu8fei.com/categories/scm/"/>
+    
+    
+      <category term="git" scheme="http://blog.zhu8fei.com/tags/git/"/>
     
   </entry>
   

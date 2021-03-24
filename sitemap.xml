@@ -2,16 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://blog.zhu8fei.com/2020/07/15/basics-menu.html</loc>
+    <loc>http://blog.zhu8fei.com/2020/07/15/Recast-menu.html</loc>
     
-    <lastmod>2020-07-17T06:50:17.204Z</lastmod>
+    <lastmod>2020-12-11T05:42:29.552Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.zhu8fei.com/2020/07/17/uml.html</loc>
+    <loc>http://blog.zhu8fei.com/2020/07/13/Attack-on-novice-4.html</loc>
     
-    <lastmod>2020-07-17T06:23:01.575Z</lastmod>
+    <lastmod>2020-12-07T10:30:02.404Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.zhu8fei.com/2020/04/13/High-risk-industry.html</loc>
+    
+    <lastmod>2020-10-14T03:22:53.443Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.zhu8fei.com/2020/07/17/object-oriented-programing.html</loc>
+    
+    <lastmod>2020-07-17T09:01:05.542Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.zhu8fei.com/2020/07/15/basics-menu.html</loc>
+    
+    <lastmod>2020-07-17T06:50:17.204Z</lastmod>
     
   </url>
   
@@ -30,13 +51,6 @@
   </url>
   
   <url>
-    <loc>http://blog.zhu8fei.com/2020/07/17/object-oriented-programing.html</loc>
-    
-    <lastmod>2020-07-17T02:55:34.096Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://blog.zhu8fei.com/2020/07/13/Attack-on-novice-menu.html</loc>
     
     <lastmod>2020-07-15T10:46:16.825Z</lastmod>
@@ -47,13 +61,6 @@
     <loc>http://blog.zhu8fei.com/2020/07/15/basics-system-environment-variable.html</loc>
     
     <lastmod>2020-07-15T10:30:24.021Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.zhu8fei.com/2020/07/15/Recast-menu.html</loc>
-    
-    <lastmod>2020-07-15T10:21:23.836Z</lastmod>
     
   </url>
   
@@ -75,13 +82,6 @@
     <loc>http://blog.zhu8fei.com/2020/06/06/unity-mqtt.html</loc>
     
     <lastmod>2020-07-15T09:40:35.318Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.zhu8fei.com/2020/07/13/Attack-on-novice-4.html</loc>
-    
-    <lastmod>2020-07-15T09:38:00.007Z</lastmod>
     
   </url>
   
@@ -152,13 +152,6 @@
     <loc>http://blog.zhu8fei.com/2020/04/13/The-novice-killer.html</loc>
     
     <lastmod>2020-04-14T01:51:27.485Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.zhu8fei.com/2020/04/13/High-risk-industry.html</loc>
-    
-    <lastmod>2020-04-13T07:51:56.292Z</lastmod>
     
   </url>
   

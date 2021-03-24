@@ -4,33 +4,6 @@
   
     
     <entry>
-      <title>uml</title>
-      <link href="/2020/07/17/uml.html"/>
-      <url>/2020/07/17/uml.html</url>
-      
-        <content type="html"><![CDATA[<h2 id="类"><a href="#类" class="headerlink" title="类"></a>类</h2><pre class="mermaid">classDiagram class Studernt Studernt : -name:String Studernt : +display () Studernt: -no:long</pre>]]></content>
-      
-      
-      <categories>
-          
-          <category> 基础 </category>
-          
-          <category> OOP </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> book </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>面向对象编程</title>
       <link href="/2020/07/17/object-oriented-programing.html"/>
       <url>/2020/07/17/object-oriented-programing.html</url>
@@ -197,7 +170,7 @@
     
     
     <entry>
-      <title>进击的菜鸟 - 喋血购物车</title>
+      <title>进击的菜鸟 4 - 喋血购物车</title>
       <link href="/2020/07/13/Attack-on-novice-4.html"/>
       <url>/2020/07/13/Attack-on-novice-4.html</url>
       
