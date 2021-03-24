@@ -5,9 +5,9 @@
   <subtitle>你要是找到一份好文档, 特么的一定是英文的.</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://blog.zhu8fei.com/"/>
+  <link href="http://www.zhu8fei.com/"/>
   <updated>2020-07-17T09:01:05.542Z</updated>
-  <id>http://blog.zhu8fei.com/</id>
+  <id>http://www.zhu8fei.com/</id>
   
   <author>
     <name>zhu8fei</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>面向对象编程</title>
-    <link href="http://blog.zhu8fei.com/2020/07/17/object-oriented-programing.html"/>
-    <id>http://blog.zhu8fei.com/2020/07/17/object-oriented-programing.html</id>
+    <link href="http://www.zhu8fei.com/2020/07/17/object-oriented-programing.html"/>
+    <id>http://www.zhu8fei.com/2020/07/17/object-oriented-programing.html</id>
     <published>2020-07-17T02:50:13.000Z</published>
     <updated>2020-07-17T09:01:05.542Z</updated>
     
@@ -36,19 +36,19 @@
     </summary>
     
     
-      <category term="基础" scheme="http://blog.zhu8fei.com/categories/%E5%9F%BA%E7%A1%80/"/>
+      <category term="基础" scheme="http://www.zhu8fei.com/categories/%E5%9F%BA%E7%A1%80/"/>
     
-      <category term="OOP" scheme="http://blog.zhu8fei.com/categories/%E5%9F%BA%E7%A1%80/OOP/"/>
+      <category term="OOP" scheme="http://www.zhu8fei.com/categories/%E5%9F%BA%E7%A1%80/OOP/"/>
     
     
-      <category term="book" scheme="http://blog.zhu8fei.com/tags/book/"/>
+      <category term="book" scheme="http://www.zhu8fei.com/tags/book/"/>
     
   </entry>
   
   <entry>
     <title>redis 备忘</title>
-    <link href="http://blog.zhu8fei.com/2020/07/15/Recast-redis.html"/>
-    <id>http://blog.zhu8fei.com/2020/07/15/Recast-redis.html</id>
+    <link href="http://www.zhu8fei.com/2020/07/15/Recast-redis.html"/>
+    <id>http://www.zhu8fei.com/2020/07/15/Recast-redis.html</id>
     <published>2020-07-15T09:32:54.000Z</published>
     <updated>2020-07-15T09:49:59.470Z</updated>
     
@@ -66,21 +66,21 @@ min-replicas-max-lag 10&lt;/code&gt;&lt;/pre&gt;
     </summary>
     
     
-      <category term="数据库" scheme="http://blog.zhu8fei.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <category term="数据库" scheme="http://www.zhu8fei.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
-      <category term="redis" scheme="http://blog.zhu8fei.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/"/>
+      <category term="redis" scheme="http://www.zhu8fei.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/"/>
     
     
-      <category term="recast" scheme="http://blog.zhu8fei.com/tags/recast/"/>
+      <category term="recast" scheme="http://www.zhu8fei.com/tags/recast/"/>
     
-      <category term="redis" scheme="http://blog.zhu8fei.com/tags/redis/"/>
+      <category term="redis" scheme="http://www.zhu8fei.com/tags/redis/"/>
     
   </entry>
   
   <entry>
     <title>zookeeper 备忘</title>
-    <link href="http://blog.zhu8fei.com/2020/07/15/Recast-zookeeper.html"/>
-    <id>http://blog.zhu8fei.com/2020/07/15/Recast-zookeeper.html</id>
+    <link href="http://www.zhu8fei.com/2020/07/15/Recast-zookeeper.html"/>
+    <id>http://www.zhu8fei.com/2020/07/15/Recast-zookeeper.html</id>
     <published>2020-07-15T09:32:49.000Z</published>
     <updated>2020-07-15T09:51:48.533Z</updated>
     
@@ -98,23 +98,23 @@ min-replicas-max-lag 10&lt;/code&gt;&lt;/pre&gt;
     </summary>
     
     
-      <category term="数据库" scheme="http://blog.zhu8fei.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <category term="数据库" scheme="http://www.zhu8fei.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
-      <category term="redis" scheme="http://blog.zhu8fei.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/"/>
+      <category term="redis" scheme="http://www.zhu8fei.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/"/>
     
     
-      <category term="recast" scheme="http://blog.zhu8fei.com/tags/recast/"/>
+      <category term="recast" scheme="http://www.zhu8fei.com/tags/recast/"/>
     
-      <category term="zookeeper" scheme="http://blog.zhu8fei.com/tags/zookeeper/"/>
+      <category term="zookeeper" scheme="http://www.zhu8fei.com/tags/zookeeper/"/>
     
-      <category term="微服务" scheme="http://blog.zhu8fei.com/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
+      <category term="微服务" scheme="http://www.zhu8fei.com/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
     
   </entry>
   
   <entry>
     <title>JAVA 环境变量</title>
-    <link href="http://blog.zhu8fei.com/2020/07/15/basics-system-environment-variable.html"/>
-    <id>http://blog.zhu8fei.com/2020/07/15/basics-system-environment-variable.html</id>
+    <link href="http://www.zhu8fei.com/2020/07/15/basics-system-environment-variable.html"/>
+    <id>http://www.zhu8fei.com/2020/07/15/basics-system-environment-variable.html</id>
     <published>2020-07-15T08:51:45.000Z</published>
     <updated>2020-07-15T10:30:24.021Z</updated>
     
@@ -129,19 +129,19 @@ min-replicas-max-lag 10&lt;/code&gt;&lt;/pre&gt;
     </summary>
     
     
-      <category term="基础" scheme="http://blog.zhu8fei.com/categories/%E5%9F%BA%E7%A1%80/"/>
+      <category term="基础" scheme="http://www.zhu8fei.com/categories/%E5%9F%BA%E7%A1%80/"/>
     
-      <category term="操作系统" scheme="http://blog.zhu8fei.com/categories/%E5%9F%BA%E7%A1%80/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+      <category term="操作系统" scheme="http://www.zhu8fei.com/categories/%E5%9F%BA%E7%A1%80/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
     
     
-      <category term="book" scheme="http://blog.zhu8fei.com/tags/book/"/>
+      <category term="book" scheme="http://www.zhu8fei.com/tags/book/"/>
     
   </entry>
   
   <entry>
     <title>基础知识 - 目录</title>
-    <link href="http://blog.zhu8fei.com/2020/07/15/basics-menu.html"/>
-    <id>http://blog.zhu8fei.com/2020/07/15/basics-menu.html</id>
+    <link href="http://www.zhu8fei.com/2020/07/15/basics-menu.html"/>
+    <id>http://www.zhu8fei.com/2020/07/15/basics-menu.html</id>
     <published>2020-07-15T08:50:49.000Z</published>
     <updated>2020-07-17T06:50:17.204Z</updated>
     
@@ -157,17 +157,17 @@ min-replicas-max-lag 10&lt;/code&gt;&lt;/pre&gt;
     </summary>
     
     
-      <category term="基础" scheme="http://blog.zhu8fei.com/categories/%E5%9F%BA%E7%A1%80/"/>
+      <category term="基础" scheme="http://www.zhu8fei.com/categories/%E5%9F%BA%E7%A1%80/"/>
     
     
-      <category term="book" scheme="http://blog.zhu8fei.com/tags/book/"/>
+      <category term="book" scheme="http://www.zhu8fei.com/tags/book/"/>
     
   </entry>
   
   <entry>
     <title>回炉重铸 - 目录</title>
-    <link href="http://blog.zhu8fei.com/2020/07/15/Recast-menu.html"/>
-    <id>http://blog.zhu8fei.com/2020/07/15/Recast-menu.html</id>
+    <link href="http://www.zhu8fei.com/2020/07/15/Recast-menu.html"/>
+    <id>http://www.zhu8fei.com/2020/07/15/Recast-menu.html</id>
     <published>2020-07-15T08:46:46.000Z</published>
     <updated>2020-12-11T05:42:29.552Z</updated>
     
@@ -185,19 +185,19 @@ min-replicas-max-lag 10&lt;/code&gt;&lt;/pre&gt;
     </summary>
     
     
-      <category term="java" scheme="http://blog.zhu8fei.com/categories/java/"/>
+      <category term="java" scheme="http://www.zhu8fei.com/categories/java/"/>
     
     
-      <category term="java" scheme="http://blog.zhu8fei.com/tags/java/"/>
+      <category term="java" scheme="http://www.zhu8fei.com/tags/java/"/>
     
-      <category term="recast" scheme="http://blog.zhu8fei.com/tags/recast/"/>
+      <category term="recast" scheme="http://www.zhu8fei.com/tags/recast/"/>
     
   </entry>
   
   <entry>
     <title>进击的菜鸟 4 - 喋血购物车</title>
-    <link href="http://blog.zhu8fei.com/2020/07/13/Attack-on-novice-4.html"/>
-    <id>http://blog.zhu8fei.com/2020/07/13/Attack-on-novice-4.html</id>
+    <link href="http://www.zhu8fei.com/2020/07/13/Attack-on-novice-4.html"/>
+    <id>http://www.zhu8fei.com/2020/07/13/Attack-on-novice-4.html</id>
     <published>2020-07-13T10:23:46.000Z</published>
     <updated>2020-12-07T10:30:02.404Z</updated>
     
@@ -217,21 +217,21 @@ min-replicas-max-lag 10&lt;/code&gt;&lt;/pre&gt;
     </summary>
     
     
-      <category term="职业生涯" scheme="http://blog.zhu8fei.com/categories/%E8%81%8C%E4%B8%9A%E7%94%9F%E6%B6%AF/"/>
+      <category term="职业生涯" scheme="http://www.zhu8fei.com/categories/%E8%81%8C%E4%B8%9A%E7%94%9F%E6%B6%AF/"/>
     
-      <category term="进击的菜鸟" scheme="http://blog.zhu8fei.com/categories/%E8%81%8C%E4%B8%9A%E7%94%9F%E6%B6%AF/%E8%BF%9B%E5%87%BB%E7%9A%84%E8%8F%9C%E9%B8%9F/"/>
+      <category term="进击的菜鸟" scheme="http://www.zhu8fei.com/categories/%E8%81%8C%E4%B8%9A%E7%94%9F%E6%B6%AF/%E8%BF%9B%E5%87%BB%E7%9A%84%E8%8F%9C%E9%B8%9F/"/>
     
     
-      <category term="Book" scheme="http://blog.zhu8fei.com/tags/Book/"/>
+      <category term="Book" scheme="http://www.zhu8fei.com/tags/Book/"/>
     
-      <category term="进击的菜鸟" scheme="http://blog.zhu8fei.com/tags/%E8%BF%9B%E5%87%BB%E7%9A%84%E8%8F%9C%E9%B8%9F/"/>
+      <category term="进击的菜鸟" scheme="http://www.zhu8fei.com/tags/%E8%BF%9B%E5%87%BB%E7%9A%84%E8%8F%9C%E9%B8%9F/"/>
     
   </entry>
   
   <entry>
     <title>进击的菜鸟 - 目录</title>
-    <link href="http://blog.zhu8fei.com/2020/07/13/Attack-on-novice-menu.html"/>
-    <id>http://blog.zhu8fei.com/2020/07/13/Attack-on-novice-menu.html</id>
+    <link href="http://www.zhu8fei.com/2020/07/13/Attack-on-novice-menu.html"/>
+    <id>http://www.zhu8fei.com/2020/07/13/Attack-on-novice-menu.html</id>
     <published>2020-07-13T10:17:52.000Z</published>
     <updated>2020-07-15T10:46:16.825Z</updated>
     
@@ -249,21 +249,21 @@ min-replicas-max-lag 10&lt;/code&gt;&lt;/pre&gt;
     </summary>
     
     
-      <category term="职业生涯" scheme="http://blog.zhu8fei.com/categories/%E8%81%8C%E4%B8%9A%E7%94%9F%E6%B6%AF/"/>
+      <category term="职业生涯" scheme="http://www.zhu8fei.com/categories/%E8%81%8C%E4%B8%9A%E7%94%9F%E6%B6%AF/"/>
     
-      <category term="进击的菜鸟" scheme="http://blog.zhu8fei.com/categories/%E8%81%8C%E4%B8%9A%E7%94%9F%E6%B6%AF/%E8%BF%9B%E5%87%BB%E7%9A%84%E8%8F%9C%E9%B8%9F/"/>
+      <category term="进击的菜鸟" scheme="http://www.zhu8fei.com/categories/%E8%81%8C%E4%B8%9A%E7%94%9F%E6%B6%AF/%E8%BF%9B%E5%87%BB%E7%9A%84%E8%8F%9C%E9%B8%9F/"/>
     
     
-      <category term="Book" scheme="http://blog.zhu8fei.com/tags/Book/"/>
+      <category term="Book" scheme="http://www.zhu8fei.com/tags/Book/"/>
     
-      <category term="进击的菜鸟" scheme="http://blog.zhu8fei.com/tags/%E8%BF%9B%E5%87%BB%E7%9A%84%E8%8F%9C%E9%B8%9F/"/>
+      <category term="进击的菜鸟" scheme="http://www.zhu8fei.com/tags/%E8%BF%9B%E5%87%BB%E7%9A%84%E8%8F%9C%E9%B8%9F/"/>
     
   </entry>
   
   <entry>
     <title>进击的菜鸟 3 - 工作经验</title>
-    <link href="http://blog.zhu8fei.com/2020/06/23/Attack-on-novice-3.html"/>
-    <id>http://blog.zhu8fei.com/2020/06/23/Attack-on-novice-3.html</id>
+    <link href="http://www.zhu8fei.com/2020/06/23/Attack-on-novice-3.html"/>
+    <id>http://www.zhu8fei.com/2020/06/23/Attack-on-novice-3.html</id>
     <published>2020-06-23T06:30:45.000Z</published>
     <updated>2020-07-13T10:29:51.921Z</updated>
     
@@ -280,21 +280,21 @@ min-replicas-max-lag 10&lt;/code&gt;&lt;/pre&gt;
     </summary>
     
     
-      <category term="职业生涯" scheme="http://blog.zhu8fei.com/categories/%E8%81%8C%E4%B8%9A%E7%94%9F%E6%B6%AF/"/>
+      <category term="职业生涯" scheme="http://www.zhu8fei.com/categories/%E8%81%8C%E4%B8%9A%E7%94%9F%E6%B6%AF/"/>
     
-      <category term="进击的菜鸟" scheme="http://blog.zhu8fei.com/categories/%E8%81%8C%E4%B8%9A%E7%94%9F%E6%B6%AF/%E8%BF%9B%E5%87%BB%E7%9A%84%E8%8F%9C%E9%B8%9F/"/>
+      <category term="进击的菜鸟" scheme="http://www.zhu8fei.com/categories/%E8%81%8C%E4%B8%9A%E7%94%9F%E6%B6%AF/%E8%BF%9B%E5%87%BB%E7%9A%84%E8%8F%9C%E9%B8%9F/"/>
     
     
-      <category term="Book" scheme="http://blog.zhu8fei.com/tags/Book/"/>
+      <category term="Book" scheme="http://www.zhu8fei.com/tags/Book/"/>
     
-      <category term="进击的菜鸟" scheme="http://blog.zhu8fei.com/tags/%E8%BF%9B%E5%87%BB%E7%9A%84%E8%8F%9C%E9%B8%9F/"/>
+      <category term="进击的菜鸟" scheme="http://www.zhu8fei.com/tags/%E8%BF%9B%E5%87%BB%E7%9A%84%E8%8F%9C%E9%B8%9F/"/>
     
   </entry>
   
   <entry>
     <title>进击的菜鸟 0 - 简历</title>
-    <link href="http://blog.zhu8fei.com/2020/06/23/Attack-on-novice-0.html"/>
-    <id>http://blog.zhu8fei.com/2020/06/23/Attack-on-novice-0.html</id>
+    <link href="http://www.zhu8fei.com/2020/06/23/Attack-on-novice-0.html"/>
+    <id>http://www.zhu8fei.com/2020/06/23/Attack-on-novice-0.html</id>
     <published>2020-06-23T06:30:44.000Z</published>
     <updated>2020-07-15T06:54:12.598Z</updated>
     
@@ -308,21 +308,21 @@ min-replicas-max-lag 10&lt;/code&gt;&lt;/pre&gt;
     </summary>
     
     
-      <category term="职业生涯" scheme="http://blog.zhu8fei.com/categories/%E8%81%8C%E4%B8%9A%E7%94%9F%E6%B6%AF/"/>
+      <category term="职业生涯" scheme="http://www.zhu8fei.com/categories/%E8%81%8C%E4%B8%9A%E7%94%9F%E6%B6%AF/"/>
     
-      <category term="进击的菜鸟" scheme="http://blog.zhu8fei.com/categories/%E8%81%8C%E4%B8%9A%E7%94%9F%E6%B6%AF/%E8%BF%9B%E5%87%BB%E7%9A%84%E8%8F%9C%E9%B8%9F/"/>
+      <category term="进击的菜鸟" scheme="http://www.zhu8fei.com/categories/%E8%81%8C%E4%B8%9A%E7%94%9F%E6%B6%AF/%E8%BF%9B%E5%87%BB%E7%9A%84%E8%8F%9C%E9%B8%9F/"/>
     
     
-      <category term="Book" scheme="http://blog.zhu8fei.com/tags/Book/"/>
+      <category term="Book" scheme="http://www.zhu8fei.com/tags/Book/"/>
     
-      <category term="进击的菜鸟" scheme="http://blog.zhu8fei.com/tags/%E8%BF%9B%E5%87%BB%E7%9A%84%E8%8F%9C%E9%B8%9F/"/>
+      <category term="进击的菜鸟" scheme="http://www.zhu8fei.com/tags/%E8%BF%9B%E5%87%BB%E7%9A%84%E8%8F%9C%E9%B8%9F/"/>
     
   </entry>
   
   <entry>
     <title>unity mqtt 使用</title>
-    <link href="http://blog.zhu8fei.com/2020/06/06/unity-mqtt.html"/>
-    <id>http://blog.zhu8fei.com/2020/06/06/unity-mqtt.html</id>
+    <link href="http://www.zhu8fei.com/2020/06/06/unity-mqtt.html"/>
+    <id>http://www.zhu8fei.com/2020/06/06/unity-mqtt.html</id>
     <published>2020-06-06T02:47:05.000Z</published>
     <updated>2020-07-15T09:40:35.318Z</updated>
     
@@ -338,19 +338,19 @@ min-replicas-max-lag 10&lt;/code&gt;&lt;/pre&gt;
     </summary>
     
     
-      <category term="unity" scheme="http://blog.zhu8fei.com/categories/unity/"/>
+      <category term="unity" scheme="http://www.zhu8fei.com/categories/unity/"/>
     
-      <category term="CSharp" scheme="http://blog.zhu8fei.com/categories/unity/CSharp/"/>
+      <category term="CSharp" scheme="http://www.zhu8fei.com/categories/unity/CSharp/"/>
     
     
-      <category term="unity" scheme="http://blog.zhu8fei.com/tags/unity/"/>
+      <category term="unity" scheme="http://www.zhu8fei.com/tags/unity/"/>
     
   </entry>
   
   <entry>
     <title>JAVA 中的各种 Object</title>
-    <link href="http://blog.zhu8fei.com/2020/04/21/various-object.html"/>
-    <id>http://blog.zhu8fei.com/2020/04/21/various-object.html</id>
+    <link href="http://www.zhu8fei.com/2020/04/21/various-object.html"/>
+    <id>http://www.zhu8fei.com/2020/04/21/various-object.html</id>
     <published>2020-04-21T02:57:36.000Z</published>
     <updated>2020-04-21T07:47:32.015Z</updated>
     
@@ -372,17 +372,17 @@ min-replicas-max-lag 10&lt;/code&gt;&lt;/pre&gt;
     </summary>
     
     
-      <category term="java" scheme="http://blog.zhu8fei.com/categories/java/"/>
+      <category term="java" scheme="http://www.zhu8fei.com/categories/java/"/>
     
     
-      <category term="java" scheme="http://blog.zhu8fei.com/tags/java/"/>
+      <category term="java" scheme="http://www.zhu8fei.com/tags/java/"/>
     
   </entry>
   
   <entry>
     <title>陪我干了这碗毒鸡汤</title>
-    <link href="http://blog.zhu8fei.com/2020/04/14/Accompany-me-to-listen-anti-motivational-quotes.html"/>
-    <id>http://blog.zhu8fei.com/2020/04/14/Accompany-me-to-listen-anti-motivational-quotes.html</id>
+    <link href="http://www.zhu8fei.com/2020/04/14/Accompany-me-to-listen-anti-motivational-quotes.html"/>
+    <id>http://www.zhu8fei.com/2020/04/14/Accompany-me-to-listen-anti-motivational-quotes.html</id>
     <published>2020-04-14T07:40:11.000Z</published>
     <updated>2020-04-15T08:13:51.376Z</updated>
     
@@ -396,17 +396,17 @@ min-replicas-max-lag 10&lt;/code&gt;&lt;/pre&gt;
     </summary>
     
     
-      <category term="职业生涯" scheme="http://blog.zhu8fei.com/categories/%E8%81%8C%E4%B8%9A%E7%94%9F%E6%B6%AF/"/>
+      <category term="职业生涯" scheme="http://www.zhu8fei.com/categories/%E8%81%8C%E4%B8%9A%E7%94%9F%E6%B6%AF/"/>
     
     
-      <category term="Book" scheme="http://blog.zhu8fei.com/tags/Book/"/>
+      <category term="Book" scheme="http://www.zhu8fei.com/tags/Book/"/>
     
   </entry>
   
   <entry>
     <title>如何创业失败</title>
-    <link href="http://blog.zhu8fei.com/2020/04/14/make-losers.html"/>
-    <id>http://blog.zhu8fei.com/2020/04/14/make-losers.html</id>
+    <link href="http://www.zhu8fei.com/2020/04/14/make-losers.html"/>
+    <id>http://www.zhu8fei.com/2020/04/14/make-losers.html</id>
     <published>2020-04-14T06:20:25.000Z</published>
     <updated>2020-04-14T07:45:29.921Z</updated>
     
@@ -427,17 +427,17 @@ min-replicas-max-lag 10&lt;/code&gt;&lt;/pre&gt;
     </summary>
     
     
-      <category term="职业生涯" scheme="http://blog.zhu8fei.com/categories/%E8%81%8C%E4%B8%9A%E7%94%9F%E6%B6%AF/"/>
+      <category term="职业生涯" scheme="http://www.zhu8fei.com/categories/%E8%81%8C%E4%B8%9A%E7%94%9F%E6%B6%AF/"/>
     
     
-      <category term="Book" scheme="http://blog.zhu8fei.com/tags/Book/"/>
+      <category term="Book" scheme="http://www.zhu8fei.com/tags/Book/"/>
     
   </entry>
   
   <entry>
     <title>进击的菜鸟 2 - 规划</title>
-    <link href="http://blog.zhu8fei.com/2020/04/13/Attack-on-novice-2.html"/>
-    <id>http://blog.zhu8fei.com/2020/04/13/Attack-on-novice-2.html</id>
+    <link href="http://www.zhu8fei.com/2020/04/13/Attack-on-novice-2.html"/>
+    <id>http://www.zhu8fei.com/2020/04/13/Attack-on-novice-2.html</id>
     <published>2020-04-13T09:32:26.000Z</published>
     <updated>2020-07-13T10:23:03.528Z</updated>
     
@@ -451,21 +451,21 @@ min-replicas-max-lag 10&lt;/code&gt;&lt;/pre&gt;
     </summary>
     
     
-      <category term="职业生涯" scheme="http://blog.zhu8fei.com/categories/%E8%81%8C%E4%B8%9A%E7%94%9F%E6%B6%AF/"/>
+      <category term="职业生涯" scheme="http://www.zhu8fei.com/categories/%E8%81%8C%E4%B8%9A%E7%94%9F%E6%B6%AF/"/>
     
-      <category term="进击的菜鸟" scheme="http://blog.zhu8fei.com/categories/%E8%81%8C%E4%B8%9A%E7%94%9F%E6%B6%AF/%E8%BF%9B%E5%87%BB%E7%9A%84%E8%8F%9C%E9%B8%9F/"/>
+      <category term="进击的菜鸟" scheme="http://www.zhu8fei.com/categories/%E8%81%8C%E4%B8%9A%E7%94%9F%E6%B6%AF/%E8%BF%9B%E5%87%BB%E7%9A%84%E8%8F%9C%E9%B8%9F/"/>
     
     
-      <category term="Book" scheme="http://blog.zhu8fei.com/tags/Book/"/>
+      <category term="Book" scheme="http://www.zhu8fei.com/tags/Book/"/>
     
-      <category term="进击的菜鸟" scheme="http://blog.zhu8fei.com/tags/%E8%BF%9B%E5%87%BB%E7%9A%84%E8%8F%9C%E9%B8%9F/"/>
+      <category term="进击的菜鸟" scheme="http://www.zhu8fei.com/tags/%E8%BF%9B%E5%87%BB%E7%9A%84%E8%8F%9C%E9%B8%9F/"/>
     
   </entry>
   
   <entry>
     <title>新手杀手</title>
-    <link href="http://blog.zhu8fei.com/2020/04/13/The-novice-killer.html"/>
-    <id>http://blog.zhu8fei.com/2020/04/13/The-novice-killer.html</id>
+    <link href="http://www.zhu8fei.com/2020/04/13/The-novice-killer.html"/>
+    <id>http://www.zhu8fei.com/2020/04/13/The-novice-killer.html</id>
     <published>2020-04-13T08:51:28.000Z</published>
     <updated>2020-04-14T01:51:27.485Z</updated>
     
@@ -480,17 +480,17 @@ min-replicas-max-lag 10&lt;/code&gt;&lt;/pre&gt;
     </summary>
     
     
-      <category term="职业生涯" scheme="http://blog.zhu8fei.com/categories/%E8%81%8C%E4%B8%9A%E7%94%9F%E6%B6%AF/"/>
+      <category term="职业生涯" scheme="http://www.zhu8fei.com/categories/%E8%81%8C%E4%B8%9A%E7%94%9F%E6%B6%AF/"/>
     
     
-      <category term="Book" scheme="http://blog.zhu8fei.com/tags/Book/"/>
+      <category term="Book" scheme="http://www.zhu8fei.com/tags/Book/"/>
     
   </entry>
   
   <entry>
     <title>高危行业</title>
-    <link href="http://blog.zhu8fei.com/2020/04/13/High-risk-industry.html"/>
-    <id>http://blog.zhu8fei.com/2020/04/13/High-risk-industry.html</id>
+    <link href="http://www.zhu8fei.com/2020/04/13/High-risk-industry.html"/>
+    <id>http://www.zhu8fei.com/2020/04/13/High-risk-industry.html</id>
     <published>2020-04-13T03:44:11.000Z</published>
     <updated>2020-10-14T03:22:53.443Z</updated>
     
@@ -503,17 +503,17 @@ min-replicas-max-lag 10&lt;/code&gt;&lt;/pre&gt;
     </summary>
     
     
-      <category term="职业生涯" scheme="http://blog.zhu8fei.com/categories/%E8%81%8C%E4%B8%9A%E7%94%9F%E6%B6%AF/"/>
+      <category term="职业生涯" scheme="http://www.zhu8fei.com/categories/%E8%81%8C%E4%B8%9A%E7%94%9F%E6%B6%AF/"/>
     
     
-      <category term="Book" scheme="http://blog.zhu8fei.com/tags/Book/"/>
+      <category term="Book" scheme="http://www.zhu8fei.com/tags/Book/"/>
     
   </entry>
   
   <entry>
     <title>进击的菜鸟 1 - 面试</title>
-    <link href="http://blog.zhu8fei.com/2020/04/13/Attack-on-novice.html"/>
-    <id>http://blog.zhu8fei.com/2020/04/13/Attack-on-novice.html</id>
+    <link href="http://www.zhu8fei.com/2020/04/13/Attack-on-novice.html"/>
+    <id>http://www.zhu8fei.com/2020/04/13/Attack-on-novice.html</id>
     <published>2020-04-13T03:35:00.000Z</published>
     <updated>2020-07-13T10:23:21.298Z</updated>
     
@@ -526,21 +526,21 @@ min-replicas-max-lag 10&lt;/code&gt;&lt;/pre&gt;
     </summary>
     
     
-      <category term="职业生涯" scheme="http://blog.zhu8fei.com/categories/%E8%81%8C%E4%B8%9A%E7%94%9F%E6%B6%AF/"/>
+      <category term="职业生涯" scheme="http://www.zhu8fei.com/categories/%E8%81%8C%E4%B8%9A%E7%94%9F%E6%B6%AF/"/>
     
-      <category term="进击的菜鸟" scheme="http://blog.zhu8fei.com/categories/%E8%81%8C%E4%B8%9A%E7%94%9F%E6%B6%AF/%E8%BF%9B%E5%87%BB%E7%9A%84%E8%8F%9C%E9%B8%9F/"/>
+      <category term="进击的菜鸟" scheme="http://www.zhu8fei.com/categories/%E8%81%8C%E4%B8%9A%E7%94%9F%E6%B6%AF/%E8%BF%9B%E5%87%BB%E7%9A%84%E8%8F%9C%E9%B8%9F/"/>
     
     
-      <category term="Book" scheme="http://blog.zhu8fei.com/tags/Book/"/>
+      <category term="Book" scheme="http://www.zhu8fei.com/tags/Book/"/>
     
-      <category term="进击的菜鸟" scheme="http://blog.zhu8fei.com/tags/%E8%BF%9B%E5%87%BB%E7%9A%84%E8%8F%9C%E9%B8%9F/"/>
+      <category term="进击的菜鸟" scheme="http://www.zhu8fei.com/tags/%E8%BF%9B%E5%87%BB%E7%9A%84%E8%8F%9C%E9%B8%9F/"/>
     
   </entry>
   
   <entry>
     <title>一切的开始</title>
-    <link href="http://blog.zhu8fei.com/2020/04/10/career-init.html"/>
-    <id>http://blog.zhu8fei.com/2020/04/10/career-init.html</id>
+    <link href="http://www.zhu8fei.com/2020/04/10/career-init.html"/>
+    <id>http://www.zhu8fei.com/2020/04/10/career-init.html</id>
     <published>2020-04-10T03:28:33.000Z</published>
     <updated>2020-04-13T03:47:09.623Z</updated>
     
@@ -553,17 +553,17 @@ min-replicas-max-lag 10&lt;/code&gt;&lt;/pre&gt;
     </summary>
     
     
-      <category term="职业生涯" scheme="http://blog.zhu8fei.com/categories/%E8%81%8C%E4%B8%9A%E7%94%9F%E6%B6%AF/"/>
+      <category term="职业生涯" scheme="http://www.zhu8fei.com/categories/%E8%81%8C%E4%B8%9A%E7%94%9F%E6%B6%AF/"/>
     
     
-      <category term="Book" scheme="http://blog.zhu8fei.com/tags/Book/"/>
+      <category term="Book" scheme="http://www.zhu8fei.com/tags/Book/"/>
     
   </entry>
   
   <entry>
     <title>clean-git</title>
-    <link href="http://blog.zhu8fei.com/2018/01/11/clean-git.html"/>
-    <id>http://blog.zhu8fei.com/2018/01/11/clean-git.html</id>
+    <link href="http://www.zhu8fei.com/2018/01/11/clean-git.html"/>
+    <id>http://www.zhu8fei.com/2018/01/11/clean-git.html</id>
     <published>2018-01-11T02:56:40.000Z</published>
     <updated>2020-04-10T02:40:17.015Z</updated>
     
@@ -581,10 +581,10 @@ min-replicas-max-lag 10&lt;/code&gt;&lt;/pre&gt;
     </summary>
     
     
-      <category term="scm" scheme="http://blog.zhu8fei.com/categories/scm/"/>
+      <category term="scm" scheme="http://www.zhu8fei.com/categories/scm/"/>
     
     
-      <category term="git" scheme="http://blog.zhu8fei.com/tags/git/"/>
+      <category term="git" scheme="http://www.zhu8fei.com/tags/git/"/>
     
   </entry>
   
