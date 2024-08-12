@@ -148,6 +148,30 @@
     
         
             
+            <li><div data-rel="blog">blog</div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="javascript"><i class="fold iconfont icon-right"></i>javascript</div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="node">node</div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
             <li><div data-rel="career"><i class="fold iconfont icon-right"></i>career</div>
                 
                     <ul class="sub hide">
@@ -168,7 +192,19 @@
     
         
             
+        
+    
+        
+            
             <li><div data-rel="java">java</div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="scm">scm</div>
                 
             </li>
             
@@ -180,11 +216,11 @@
                 
                     <ul class="sub hide">
                         
-                        <li><div data-rel="redis">redis</div>
+                        <li><div data-rel="mysql">mysql</div>
                             
                         </li>
                             
-                        <li><div data-rel="mysql">mysql</div>
+                        <li><div data-rel="redis">redis</div>
                             
                         </li>
                             
@@ -216,10 +252,6 @@
     
         
             
-        
-    
-        
-            
             <li><div data-rel="base"><i class="fold iconfont icon-right"></i>base</div>
                 
                     <ul class="sub hide">
@@ -236,22 +268,6 @@
     
         
             
-            <li><div data-rel="scm">scm</div>
-                
-            </li>
-            
-        
-    
-        
-            
-        
-    
-        
-            
-            <li><div data-rel="blog">blog</div>
-                
-            </li>
-            
         
     
         
@@ -263,22 +279,6 @@
         
     
         
-            
-        
-    
-        
-            
-            <li><div data-rel="javascript"><i class="fold iconfont icon-right"></i>javascript</div>
-                
-                    <ul class="sub hide">
-                        
-                        <li><div data-rel="node">node</div>
-                            
-                        </li>
-                            
-                    </ul>
-                
-            </li>
             
         
     
@@ -328,6 +328,26 @@
     <div class="tags-list">
     
     <li class="article-tag-list-item">
+        <a class="color5">hexo</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color2">github</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">web</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">node</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">manager</a>
+    </li>
+    
+    <li class="article-tag-list-item">
         <a class="color5">Book</a>
     </li>
     
@@ -337,6 +357,18 @@
     
     <li class="article-tag-list-item">
         <a class="color5">java</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">git</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">msyql</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">linux</a>
     </li>
     
     <li class="article-tag-list-item">
@@ -361,38 +393,6 @@
     
     <li class="article-tag-list-item">
         <a class="color5">base</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color4">git</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color1">msyql</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color1">linux</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color5">hexo</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color2">github</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color4">web</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color5">node</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color3">manager</a>
     </li>
     
     <div class="clearfix"></div>
@@ -738,8 +738,8 @@
 <script type="text/javascript">
     $.getScript('https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.js', function () {
         var gitalk = new Gitalk({
-            clientID: '69030c682515da9a3b2b',
-            clientSecret: '26c6f44e5ef38c99c7cabd2540ac32850c458c6f',
+            clientID: 'Ov23lijJWnOBFzIMleXi',
+            clientSecret: 'e058ce426b49a2c0233609e8b31a9000cfb57e84',
             repo: 'zhu8fei.github.io',
             owner: 'zhu8fei',
             admin: ['zhu8fei'],
@@ -807,7 +807,7 @@
     /*作者、标签的自动补全*/
     $(function () {
         $('.search').AutoComplete({
-            'data': ['#Book','#attack on novice','#java','#recast','#redis','#zookeeper','#mirror server','#book','#base','#git','#msyql','#linux','#hexo','#github','#web','#node','#manager',],
+            'data': ['#hexo','#github','#web','#node','#manager','#Book','#attack on novice','#java','#git','#msyql','#linux','#recast','#redis','#zookeeper','#mirror server','#book','#base',],
             'itemHeight': 20,
             'width': 418
         }).AutoComplete('show');
