@@ -33,7 +33,7 @@ $(document).on({
     'pjax:start': function () {
         content.css({'opacity': 0});
     },
-
+    
     /*pjax请求回来页面后触发的事件*/
     'pjax:end': function () {
         NProgress.done();
@@ -65,11 +65,15 @@ function afterPjax() {
             );
         });
     }
-
+    console.info("after pjax run")
+   
     /*渲染高亮代码块结构与样式*/
-    $('pre code').each(function (i, block) {
+    $('.code pre').each(function (i, block) {
+        
         hljs.highlightBlock(block);
     });
+   
+
     /*新内容淡入*/
     content.css({'opacity': 1}).removeClass('fadeOuts').addClass('fadeIns');
     bind();
@@ -437,13 +441,13 @@ function bind() {
     $(".article_number").text($("#yelog_site_posts_number").val());
     $(".site_word_count").text($("#yelog_site_word_count").val());
     $(".site_uv").text($("#busuanzi_value_site_uv").text());
-    $("#busuanzi_value_site_uv").bind("DOMNodeInserted", function (e) {
-        $(".site_uv").text($(this).text())
-    });
+    // $("#busuanzi_value_site_uv").bind("DOMNodeInserted", function (e) {
+    //     $(".site_uv").text($(this).text())
+    // });
     $(".site_pv").text($("#busuanzi_value_site_pv").text())
-    $("#busuanzi_value_site_pv").bind("DOMNodeInserted", function (e) {
-        $(".site_pv").text($(this).text())
-    });
+    // $("#busuanzi_value_site_pv").bind("DOMNodeInserted", function (e) {
+    //     $(".site_pv").text($(this).text())
+    // });
     $(".post .pjax .index").find("br").remove();
     $(".post .pjax .index h1:eq(0)").addClass("article-title");
     //绑定文章内tag的搜索事件
