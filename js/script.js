@@ -66,13 +66,6 @@ function afterPjax() {
         });
     }
     console.info("after pjax run")
-   
-    /*渲染高亮代码块结构与样式*/
-    $('.code pre').each(function (i, block) {
-        
-        hljs.highlightBlock(block);
-    });
-   
 
     /*新内容淡入*/
     content.css({'opacity': 1}).removeClass('fadeOuts').addClass('fadeIns');
@@ -437,17 +430,22 @@ $(function () {
 
 /*绑定新加载内容的点击事件*/
 function bind() {
+    if ($('#theme_highlight_on').val() === 'true') {
+        $('pre code').each(function (i, block) {
+            var codeClass = $(this).attr('class') || ''
+            var hasCopy = $('#theme_code_copy').val() !== 'false'
+            // 添加复制功能
+            $(this).after('<div class="code-embed"><span class="code-embed-type">'+ (codeClass.indexOf('hljs') === -1 ? codeClass : codeClass.indexOf('hljs') === 0 ? '' : codeClass.replace(/[\s]?hljs/g, ''))+'</span>'+(hasCopy ? '<span class="code-embed-copy" onclick="copyCode(this)">复制代码</span>' : '')+'</div>')
+            // 渲染样式
+            if (codeClass.indexOf('hljs') === -1) {
+                hljs.highlightBlock(block);
+            }
+        });
+    }
+
     initArticle();
     $(".article_number").text($("#yelog_site_posts_number").val());
     $(".site_word_count").text($("#yelog_site_word_count").val());
-    $(".site_uv").text($("#busuanzi_value_site_uv").text());
-    // $("#busuanzi_value_site_uv").bind("DOMNodeInserted", function (e) {
-    //     $(".site_uv").text($(this).text())
-    // });
-    $(".site_pv").text($("#busuanzi_value_site_pv").text())
-    // $("#busuanzi_value_site_pv").bind("DOMNodeInserted", function (e) {
-    //     $(".site_pv").text($(this).text())
-    // });
     $(".post .pjax .index").find("br").remove();
     $(".post .pjax .index h1:eq(0)").addClass("article-title");
     //绑定文章内tag的搜索事件

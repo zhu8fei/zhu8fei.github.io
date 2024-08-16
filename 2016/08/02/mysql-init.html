@@ -23,18 +23,11 @@
 
 <link href="/css/style.css?v=1.0.1" rel="stylesheet">
 
-<link href="//cdn.bootcdn.net/ajax/libs/highlight.js/11.10.0/styles/base16/monokai.min.css?v=1.0.1" rel="stylesheet">
-
 <link href="//cdn.bootcdn.net/animate.css/3.5.2/animate.min.css" rel="stylesheet">
 <link href="//cdn.bootcdn.net/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
 <script src="//cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-
-<script src="//cdn.bootcdn.net/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
-<script>
-        hljs.highlightAll();
-</script>
 
 
 
@@ -51,6 +44,8 @@
 <div style="display: none">
   <input class="theme_preload_comment" value="true">
   <input class="theme_blog_path" value="">
+  <input id="theme_highlight_on" value="false" />
+  <input id="theme_code_copy" value="" />
 </div>
 
 <body>
@@ -149,7 +144,31 @@
     
         
             
-            <li><div data-rel="blog">blog</div>
+            <li><div data-rel="基础"><i class="fold iconfont icon-right"></i>基础</div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="blog">blog</div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="scm">scm</div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="操作系统">操作系统</div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="OOP">OOP</div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="目录页">目录页</div>
+                            
+                        </li>
+                            
+                    </ul>
                 
             </li>
             
@@ -162,22 +181,6 @@
                     <ul class="sub hide">
                         
                         <li><div data-rel="node">node</div>
-                            
-                        </li>
-                            
-                    </ul>
-                
-            </li>
-            
-        
-    
-        
-            
-            <li><div data-rel="职业生涯"><i class="fold iconfont icon-right"></i>职业生涯</div>
-                
-                    <ul class="sub hide">
-                        
-                        <li><div data-rel="进击的菜鸟">进击的菜鸟</div>
                             
                         </li>
                             
@@ -209,7 +212,15 @@
     
         
             
-            <li><div data-rel="scm">scm</div>
+            <li><div data-rel="职业生涯"><i class="fold iconfont icon-right"></i>职业生涯</div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="进击的菜鸟">进击的菜鸟</div>
+                            
+                        </li>
+                            
+                    </ul>
                 
             </li>
             
@@ -233,7 +244,7 @@
                 
                     <ul class="sub hide">
                         
-                        <li><div data-rel="线程">线程</div>
+                        <li><div data-rel="设计模式">设计模式</div>
                             
                         </li>
                             
@@ -241,7 +252,7 @@
                             
                         </li>
                             
-                        <li><div data-rel="设计模式">设计模式</div>
+                        <li><div data-rel="线程">线程</div>
                             
                         </li>
                             
@@ -257,37 +268,9 @@
     
         
             
-            <li><div data-rel="基础"><i class="fold iconfont icon-right"></i>基础</div>
-                
-                    <ul class="sub hide">
-                        
-                        <li><div data-rel="操作系统">操作系统</div>
-                            
-                        </li>
-                            
-                        <li><div data-rel="OOP">OOP</div>
-                            
-                        </li>
-                            
-                    </ul>
-                
-            </li>
-            
         
     
         
-            
-            <li><div data-rel="base"><i class="fold iconfont icon-right"></i>base</div>
-                
-                    <ul class="sub hide">
-                        
-                        <li><div data-rel="目录页">目录页</div>
-                            
-                        </li>
-                            
-                    </ul>
-                
-            </li>
             
         
     
@@ -324,7 +307,7 @@
     </div>
     <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
 </div>
-<input type="hidden" id="yelog_site_posts_number" value="35">
+<input type="hidden" id="yelog_site_posts_number" value="38">
 
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
@@ -373,10 +356,6 @@
     </li>
     
     <li class="article-tag-list-item">
-        <a class="color3">管理</a>
-    </li>
-    
-    <li class="article-tag-list-item">
         <a class="color1">msyql</a>
     </li>
     
@@ -385,7 +364,7 @@
     </li>
     
     <li class="article-tag-list-item">
-        <a class="color4">git</a>
+        <a class="color3">管理</a>
     </li>
     
     <li class="article-tag-list-item">
@@ -398,6 +377,10 @@
     
     <li class="article-tag-list-item">
         <a class="color5">java</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">git</a>
     </li>
     
     <li class="article-tag-list-item">
@@ -421,7 +404,7 @@
     </li>
     
     <li class="article-tag-list-item">
-        <a class="color5">base</a>
+        <a class="color3">基础</a>
     </li>
     
     <li class="article-tag-list-item">
@@ -438,9 +421,33 @@
     
     <nav id="title-list-nav">
         
+        <a  class="java 设计模式 "
+           href="/2024/08/15/ecorator-pattern.html"
+           data-tag="基础,设计模式"
+           data-author="" >
+            <span class="post-title" title="装饰模式">装饰模式</span>
+            <span class="post-date" title="2024-08-15 16:57:52">2024/08/15</span>
+        </a>
+        
+        <a  class="java 设计模式 "
+           href="/2024/08/15/proxy-pattern.html"
+           data-tag="基础,设计模式"
+           data-author="" >
+            <span class="post-title" title="代理模式">代理模式</span>
+            <span class="post-date" title="2024-08-15 16:57:52">2024/08/15</span>
+        </a>
+        
+        <a  class="java 设计模式 "
+           href="/2024/08/15/proxy-vs-ecorator.html"
+           data-tag="基础,设计模式"
+           data-author="" >
+            <span class="post-title" title="代理模式vs装饰器模式">代理模式vs装饰器模式</span>
+            <span class="post-date" title="2024-08-15 16:57:52">2024/08/15</span>
+        </a>
+        
         <a  class="java 分布式 "
            href="/2024/08/14/about-cap.html"
-           data-tag="base"
+           data-tag="基础"
            data-author="" >
             <span class="post-title" title="about cap">about cap</span>
             <span class="post-date" title="2024-08-14 17:05:49">2024/08/14</span>
@@ -448,7 +455,7 @@
         
         <a  class="java 线程 "
            href="/2024/08/14/thread-lock.html"
-           data-tag="base"
+           data-tag="基础"
            data-author="" >
             <span class="post-title" title="线程锁">线程锁</span>
             <span class="post-date" title="2024-08-14 11:42:51">2024/08/14</span>
@@ -456,7 +463,7 @@
         
         <a  class="java 线程 "
            href="/2024/08/14/volatile.html"
-           data-tag="base"
+           data-tag="基础"
            data-author="" >
             <span class="post-title" title="volatile 关键字">volatile 关键字</span>
             <span class="post-date" title="2024-08-14 10:40:10">2024/08/14</span>
@@ -464,7 +471,7 @@
         
         <a  class="java 线程 "
            href="/2024/08/14/thread-create.html"
-           data-tag="base"
+           data-tag="基础"
            data-author="" >
             <span class="post-title" title="多线程的创建">多线程的创建</span>
             <span class="post-date" title="2024-08-14 09:31:21">2024/08/14</span>
@@ -472,7 +479,7 @@
         
         <a  class="java 设计模式 "
            href="/2024/08/13/abstract-factory-pattern.html"
-           data-tag="base,设计模式"
+           data-tag="基础,设计模式"
            data-author="" >
             <span class="post-title" title="抽象工厂模式">抽象工厂模式</span>
             <span class="post-date" title="2024-08-13 17:33:57">2024/08/13</span>
@@ -480,7 +487,7 @@
         
         <a  class="java 设计模式 "
            href="/2024/08/13/factory-method-pattern.html"
-           data-tag="base,设计模式"
+           data-tag="基础,设计模式"
            data-author="" >
             <span class="post-title" title="工厂模式">工厂模式</span>
             <span class="post-date" title="2024-08-13 16:59:36">2024/08/13</span>
@@ -488,23 +495,23 @@
         
         <a  class="java 设计模式 "
            href="/2024/08/13/singleton-pattern.html"
-           data-tag="base,设计模式"
+           data-tag="基础,设计模式"
            data-author="" >
             <span class="post-title" title="单例模式">单例模式</span>
             <span class="post-date" title="2024-08-13 15:51:57">2024/08/13</span>
         </a>
         
-        <a  class="base 目录页 "
+        <a  class="基础 目录页 "
            href="/2024/08/13/design-pattern-menu.html"
-           data-tag="目录页,base,设计模式"
+           data-tag="目录页,基础,设计模式"
            data-author="" >
             <span class="post-title" title="设计模式索引">设计模式索引</span>
             <span class="post-date" title="2024-08-13 15:44:14">2024/08/13</span>
         </a>
         
-        <a  class="base 目录页 "
+        <a  class="基础 目录页 "
            href="/2024/08/12/basic-knowledge.html"
-           data-tag="Book,base"
+           data-tag="Book,基础"
            data-author="" >
             <span class="post-title" title="基础知识索引">基础知识索引</span>
             <span class="post-date" title="2024-08-12 11:10:09">2024/08/12</span>
@@ -550,7 +557,7 @@
             <span class="post-date" title="2020-07-15 17:32:54">2020/07/15</span>
         </a>
         
-        <a  class="database redis "
+        <a  class="java 分布式 "
            href="/2020/07/15/Recast-zookeeper.html"
            data-tag="回炉,zookeeper,分布式"
            data-author="" >
@@ -678,7 +685,7 @@
             <span class="post-date" title="2020-04-10 11:28:33">2020/04/10</span>
         </a>
         
-        <a  class="scm "
+        <a  class="基础 scm "
            href="/2018/01/11/clean-git.html"
            data-tag="git"
            data-author="" >
@@ -710,7 +717,7 @@
             <span class="post-date" title="2016-05-22 21:42:14">2016/05/22</span>
         </a>
         
-        <a  class="blog "
+        <a  class="基础 blog "
            href="/2016/05/21/hexo-github-pages.html"
            data-tag="hexo,github,web"
            data-author="" >
@@ -810,24 +817,24 @@
         <p>本地安装个mysql容易吗.</p>
 <h2 id="0x00-准备工作"><a href="#0x00-准备工作" class="headerlink" title="0x00 准备工作"></a>0x00 准备工作</h2><p>mysql.zip 下载地址: 我很懒.没找到.<br>解压并找到对应目录. 修改my.ini文件  默认会有一个my-default.ini文件.  没时间解释了,快copy.</p>
 <h2 id="0x01-my-ini"><a href="#0x01-my-ini" class="headerlink" title="0x01 my.ini"></a>0x01 my.ini</h2><p>utf8 不解释.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">collation-server = utf8_unicode_ci</span><br><span class="line">init-connect=<span class="string">&#x27;SET NAMES utf8&#x27;</span></span><br><span class="line">character-set-server = utf8</span><br><span class="line">[client]</span><br><span class="line">default-character-set=utf8</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash">collation-server = utf8_unicode_ci<br>init-connect=<span class="hljs-string">&#x27;SET NAMES utf8&#x27;</span><br>character-set-server = utf8<br>[client]<br>default-character-set=utf8<br></code></pre></td></tr></table></figure>
 <span id="more"></span>
 <h2 id="0x02-环境变量"><a href="#0x02-环境变量" class="headerlink" title="0x02 环境变量"></a>0x02 环境变量</h2><p>添加bin目录到path</p>
-<h2 id="0x03-mysql服务初始化"><a href="#0x03-mysql服务初始化" class="headerlink" title="0x03 mysql服务初始化"></a>0x03 mysql服务初始化</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mysqld --initialize-insecure --user=root</span><br><span class="line">mysqld install</span><br></pre></td></tr></table></figure>
+<h2 id="0x03-mysql服务初始化"><a href="#0x03-mysql服务初始化" class="headerlink" title="0x03 mysql服务初始化"></a>0x03 mysql服务初始化</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">mysqld --initialize-insecure --user=root<br>mysqld install<br></code></pre></td></tr></table></figure>
 
 <h2 id="0x04-修改root密码"><a href="#0x04-修改root密码" class="headerlink" title="0x04 修改root密码"></a>0x04 修改root密码</h2><p>非必须</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqladmin -u root password [密码]</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">mysqladmin -u root password [密码]<br></code></pre></td></tr></table></figure>
 
-<h2 id="0x05-检查字符集"><a href="#0x05-检查字符集" class="headerlink" title="0x05 检查字符集"></a>0x05 检查字符集</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SHOW VARIABLES LIKE <span class="string">&#x27;character%&#x27;</span>;</span><br></pre></td></tr></table></figure>
+<h2 id="0x05-检查字符集"><a href="#0x05-检查字符集" class="headerlink" title="0x05 检查字符集"></a>0x05 检查字符集</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">SHOW VARIABLES LIKE <span class="hljs-string">&#x27;character%&#x27;</span>;<br></code></pre></td></tr></table></figure>
 <p>正常姿势.  坑了也别怕. 因为刚刚安装好.  还可以把服务停了之后去修改my.ini . 重复0x01步骤.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">+--------------------------+--------+</span><br><span class="line">| Variable_name            | Value  |</span><br><span class="line">+--------------------------+--------+</span><br><span class="line">| character_set_client     | utf8   |</span><br><span class="line">| character_set_connection | utf8   |</span><br><span class="line">| character_set_database   | utf8   |</span><br><span class="line">| character_set_filesystem | binary |</span><br><span class="line">| character_set_results    | utf8   |</span><br><span class="line">| character_set_server     | utf8   |</span><br><span class="line">| character_set_system     | utf8   |</span><br><span class="line">| character_sets_dir       |[我删了]|</span><br><span class="line">+--------------------------+--------+</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs bash">+--------------------------+--------+<br>| Variable_name            | Value  |<br>+--------------------------+--------+<br>| character_set_client     | utf8   |<br>| character_set_connection | utf8   |<br>| character_set_database   | utf8   |<br>| character_set_filesystem | binary |<br>| character_set_results    | utf8   |<br>| character_set_server     | utf8   |<br>| character_set_system     | utf8   |<br>| character_sets_dir       |[我删了]|<br>+--------------------------+--------+<br></code></pre></td></tr></table></figure>
 
-<h2 id="0x06-赋权限"><a href="#0x06-赋权限" class="headerlink" title="0x06 赋权限"></a>0x06 赋权限</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">grant [权限1,权限2, ...   或者 all ] on [实例].[表] to <span class="string">&#x27;[用户]&#x27;</span>@<span class="string">&#x27;[ip]&#x27;</span> [ identified by <span class="string">&#x27;密码&#x27;</span> ];</span><br><span class="line">``` bash</span><br><span class="line">IP 可以使用% 做为全网段控制, 通用样例.</span><br><span class="line">``` bash </span><br><span class="line">	grant all on *.* to <span class="string">&#x27;root&#x27;</span>@<span class="string">&#x27;%&#x27;</span>;</span><br></pre></td></tr></table></figure>
+<h2 id="0x06-赋权限"><a href="#0x06-赋权限" class="headerlink" title="0x06 赋权限"></a>0x06 赋权限</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash">grant [权限1,权限2, ...   或者 all ] on [实例].[表] to <span class="hljs-string">&#x27;[用户]&#x27;</span>@<span class="hljs-string">&#x27;[ip]&#x27;</span> [ identified by <span class="hljs-string">&#x27;密码&#x27;</span> ];<br>``` bash<br>IP 可以使用% 做为全网段控制, 通用样例.<br>``` bash <br>	grant all on *.* to <span class="hljs-string">&#x27;root&#x27;</span>@<span class="hljs-string">&#x27;%&#x27;</span>;<br></code></pre></td></tr></table></figure>
 
-<h2 id="0x07-删除密码"><a href="#0x07-删除密码" class="headerlink" title="0x07 删除密码"></a>0x07 删除密码</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mysql -u root -p </span><br><span class="line">mysql&gt;use mysql; </span><br><span class="line">mysql&gt;update user <span class="built_in">set</span> password=<span class="string">&#x27;&#x27;</span> <span class="built_in">where</span> user=<span class="string">&#x27;root&#x27;</span>; </span><br></pre></td></tr></table></figure>
+<h2 id="0x07-删除密码"><a href="#0x07-删除密码" class="headerlink" title="0x07 删除密码"></a>0x07 删除密码</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">mysql -u root -p <br>mysql&gt;use mysql; <br>mysql&gt;update user <span class="hljs-built_in">set</span> password=<span class="hljs-string">&#x27;&#x27;</span> <span class="hljs-built_in">where</span> user=<span class="hljs-string">&#x27;root&#x27;</span>; <br></code></pre></td></tr></table></figure>
 <p>需要重启mysql服务</p>
 <h2 id="0x08-服务默认启动"><a href="#0x08-服务默认启动" class="headerlink" title="0x08 服务默认启动"></a>0x08 服务默认启动</h2><p>这个应该写在linux服务相关的文档中的. </p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chkconfig  mysqld on</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">chkconfig  mysqld on<br></code></pre></td></tr></table></figure>
 
 <h2 id="0x99-其它问题"><a href="#0x99-其它问题" class="headerlink" title="0x99 其它问题"></a>0x99 其它问题</h2><p>暂时没有. 哪天有了再补</p>
 
@@ -930,12 +937,12 @@
 <script src="/js/script.js?v=1.0.1" ></script>
 <script>
     var img_resize = 'default';
-
     function initArticle() {
         /*渲染对应的表格样式*/
         
             $(".post .pjax table").addClass("green_title");
         
+
         /*渲染打赏样式*/
         
         $("input[name=pay]").on("click", function () {
@@ -948,20 +955,6 @@
         
      
         /*高亮代码块行号*/
-        
-        $('.code pre ').each(function(){
-            var lines = $(this).text().trim().split('\n').length, widther='';
-            if (lines>99) {
-                widther = 'widther'
-            }
-            var $numbering = $('<ul/>').addClass('pre-numbering ' + widther).attr("unselectable","on");
-            $(this).addClass('has-numbering ' + widther)
-                    .parent()
-                    .append($numbering);
-            for(var i=1;i<=lines;i++){
-                $numbering.append($('<li/>').text(i));
-            }
-        });
         
 
         /*访问数量*/
@@ -1006,38 +999,6 @@
 </script>
 
 <!--加入行号的高亮代码块样式-->
-
-<style>
-    pre{
-        position: relative;
-        margin-bottom: 24px;
-        border-radius: 10px;
-        border: 1px solid #e2dede;
-        background: #FFF;
-        overflow: hidden;
-    }
-    code.has-numbering{
-        margin-left: 30px;
-    }
-    code.has-numbering.widther{
-        margin-left: 35px;
-    }
-    .pre-numbering{
-        margin: 0px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 20px;
-        padding: 0.5em 3px 0.7em 5px;
-        border-right: 1px solid #C3CCD0;
-        text-align: right;
-        color: #AAA;
-        background-color: ;
-    }
-    .pre-numbering.widther {
-        width: 35px;
-    }
-</style>
 
 <!--自定义样式设置-->
 <style>
